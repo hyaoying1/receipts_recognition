@@ -1,0 +1,2169 @@
+{
+  "task_start": "2025-11-07T07:52:28.876305Z",
+  "models": [
+    {
+      "model": "qwen-vl-plus",
+      "start_time": "2025-11-07T07:52:28.876315Z",
+      "cases": [
+        {
+          "_file": "pictures/携程用车行程单_page_01.jpg",
+          "_doc_type": "trip",
+          "output": {
+            "type": "itinerary",
+            "attachment_name": null,
+            "vendor": "携程",
+            "transaction_date": "2025-08-25",
+            "start_date": "2025-08-22",
+            "end_date": "2025-08-22",
+            "city": "北京",
+            "invoice_line_id": null,
+            "trips": [
+              {
+                "start_location": "汉庭前门大街店",
+                "end_location": "大兴国际机场",
+                "start_time": "13:55:00",
+                "line_amount": 103.0,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 103.0
+          }
+        },
+        {
+          "_file": "pictures/曹操出行电子行程单-2条乘车记录_page_01.jpg",
+          "_doc_type": "trip",
+          "output": {
+            "type": "itinerary",
+            "attachment_name": null,
+            "vendor": "曹操出行",
+            "transaction_date": "2023-01-18",
+            "start_date": "2023-01-13",
+            "end_date": "2023-01-13",
+            "city": "福州",
+            "invoice_line_id": null,
+            "trips": [
+              {
+                "start_location": "中国进出口银行(福建省分行)",
+                "end_location": "福州软件园A区28号楼",
+                "start_time": "14:10",
+                "line_amount": 39.72,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "福州软件园A区28号楼",
+                "end_location": "中国进出口银行(福建省分行)",
+                "start_time": "15:40",
+                "line_amount": 43.43,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 39.72
+          }
+        },
+        {
+          "_file": "pictures/滴滴出行行程报销单-7条乘车记录_page_01.jpg",
+          "_doc_type": "trip",
+          "output": {
+            "type": "itinerary",
+            "attachment_name": null,
+            "vendor": "DIDI TRAVEL",
+            "transaction_date": "2024-01-19",
+            "start_date": "2023-12-28",
+            "end_date": "2024-01-16",
+            "city": "厦门市",
+            "invoice_line_id": "18759121718",
+            "trips": [
+              {
+                "start_location": "集美大道|咪咕新空文化科技(厦门)有限公司",
+                "end_location": "集美区国贸天骄",
+                "start_time": "23:12",
+                "line_amount": 13.02,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "集美大道|咪咕新空文化科技(厦门)有限公司",
+                "end_location": "集美区国贸天骄",
+                "start_time": "20:19",
+                "line_amount": 13.92,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "集美大道|咪咕新空文化科技(厦门)有限公司",
+                "end_location": "集美区国贸天骄",
+                "start_time": "19:57",
+                "line_amount": 13.92,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "集美大道|咪咕新空文化科技(厦门)有限公司",
+                "end_location": "集美区国贸天骄",
+                "start_time": "12:10",
+                "line_amount": 14.44,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "集美大道|咪咕新空文化科技(厦门)有限公司",
+                "end_location": "集美区国贸天骄",
+                "start_time": "17:50",
+                "line_amount": 12.81,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 96.89
+          }
+        },
+        {
+          "_file": "pictures/花小猪打车行程单-2条乘车记录_page_01.jpg",
+          "_doc_type": "trip",
+          "output": {
+            "type": "itinerary",
+            "attachment_name": null,
+            "vendor": "花小猪打车",
+            "transaction_date": "2024-03-04",
+            "start_date": "2024-01-21",
+            "end_date": "2024-02-08",
+            "city": "福州市",
+            "invoice_line_id": null,
+            "trips": [
+              {
+                "start_location": "汉庭酒店(福州火车站店)",
+                "end_location": "上海铁路局移动公司大楼-东门1门",
+                "start_time": "20:12",
+                "line_amount": 31.4,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "S201中国移动福建数据中心",
+                "end_location": "福建省福州市晋安区北环中路216号电建公司",
+                "start_time": "17:32",
+                "line_amount": 89.92,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 121.32
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单01+苏州合景万怡+0816+692.60.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "苏州",
+            "checkin_date": "2024-08-16",
+            "checkout_date": "2024-08-17",
+            "currency": "CNY",
+            "amount": 692.6,
+            "invoice_line_id": "XXXXX7512"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单03+苏州希尔顿+0820+663.45.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "希尔顿酒店旗舰店",
+            "checkin_date": "2024-08-20",
+            "checkout_date": "2024-08-21",
+            "currency": "CNY",
+            "amount": 663.45,
+            "invoice_line_id": "MS003"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单04+苏州AC酒店+0821+527.26.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "苏州",
+            "checkin_date": "2024-08-21",
+            "checkout_date": "2024-08-23",
+            "currency": "CNY",
+            "amount": -527.26,
+            "invoice_line_id": "76890289"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单06+天津瑞吉金融街+0823+800.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "天津",
+            "checkin_date": "2024-08-23",
+            "checkout_date": "2024-08-24",
+            "currency": "CNY",
+            "amount": 800.0,
+            "invoice_line_id": "X4"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单07+万丽天津宾馆+0824+650.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "天津",
+            "checkin_date": "2024-08-24",
+            "checkout_date": "2024-08-25",
+            "currency": "CNY",
+            "amount": 650.0,
+            "invoice_line_id": "73645091"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单08+天津康莱德+0825+800.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "天津",
+            "checkin_date": "2024-08-25",
+            "checkout_date": "2024-08-26",
+            "currency": "CNY",
+            "amount": 800.0,
+            "invoice_line_id": "1520433"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单09+苏州福朋喜来登+0826+780.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "中新苏州福朋",
+            "checkin_date": "2024-08-26",
+            "checkout_date": "2024-08-26",
+            "currency": "CNY",
+            "amount": 780.0,
+            "invoice_line_id": "2005"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单10+苏州希尔顿+0827+663.45.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "中国",
+            "checkin_date": "2024-08-29",
+            "checkout_date": "2024-08-30",
+            "currency": "CNY",
+            "amount": 663.45,
+            "invoice_line_id": "3108321525"
+          }
+        }
+      ],
+      "end_time": "2025-11-07T07:52:59.924073Z",
+      "elapsed_seconds": 31.047762155532837
+    },
+    {
+      "model": "qwen-vl-max",
+      "start_time": "2025-11-07T07:52:59.924081Z",
+      "cases": [
+        {
+          "_file": "pictures/携程用车行程单_page_01.jpg",
+          "_doc_type": "trip",
+          "output": {
+            "type": "itinerary",
+            "attachment_name": null,
+            "vendor": "携程",
+            "transaction_date": "2025-08-25",
+            "start_date": "2025-08-22",
+            "end_date": "2025-08-22",
+            "city": "北京",
+            "invoice_line_id": null,
+            "trips": [
+              {
+                "start_location": "汉庭酒店(北京前门大街店)",
+                "end_location": "大兴国际机场",
+                "start_time": "13:55:00",
+                "line_amount": 103.0,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 103.0
+          }
+        },
+        {
+          "_file": "pictures/曹操出行电子行程单-2条乘车记录_page_01.jpg",
+          "_doc_type": "trip",
+          "output": {
+            "type": "itinerary",
+            "attachment_name": null,
+            "vendor": "曹操出行",
+            "transaction_date": "2023-01-18",
+            "start_date": "2023-01-13",
+            "end_date": "2023-01-13",
+            "city": "福州",
+            "invoice_line_id": null,
+            "trips": [
+              {
+                "start_location": "中国进出口银行(福建省分行)",
+                "end_location": "福州软件园A区28号楼",
+                "start_time": "14:10:00",
+                "line_amount": 39.72,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "福州软件园A区28号楼",
+                "end_location": "中国进出口银行(福建省分行)",
+                "start_time": "12:58:00",
+                "line_amount": 43.43,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 83.15
+          }
+        },
+        {
+          "_file": "pictures/滴滴出行行程报销单-7条乘车记录_page_01.jpg",
+          "_doc_type": "trip",
+          "output": {
+            "type": "itinerary",
+            "attachment_name": null,
+            "vendor": "滴滴出行",
+            "transaction_date": "2024-01-19",
+            "start_date": "2023-12-28",
+            "end_date": "2024-01-16",
+            "city": "厦门市",
+            "invoice_line_id": "18759121718",
+            "trips": [
+              {
+                "start_location": "集美大道|咪咕新空文化科技(厦门)有限公司北侧",
+                "end_location": "集美区|国贸天峯",
+                "start_time": "23:12:00",
+                "line_amount": 14.86,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "集美大道|咪咕新空文化科技-厦门有限公司",
+                "end_location": "集美区|国贸天峯",
+                "start_time": "02:09:00",
+                "line_amount": 13.02,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "集美大道|咪咕新空文化科技-厦门有限公司",
+                "end_location": "集美区|国贸天峯",
+                "start_time": "10:20:19",
+                "line_amount": 13.92,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "集美大道|咪咕新空文化科技-厦门有限公司",
+                "end_location": "集美区|国贸天峯",
+                "start_time": "11:19:57",
+                "line_amount": 13.92,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "集美大道|咪咕新空文化科技-厦门有限公司",
+                "end_location": "集美区|国贸天峯",
+                "start_time": "12:20:31",
+                "line_amount": 14.44,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "集美大道|咪咕新空文化科技-厦门有限公司",
+                "end_location": "集美区|国贸天峯",
+                "start_time": "15:20:44",
+                "line_amount": 13.92,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "集美大道|咪咕新空文化科技-厦门有限公司",
+                "end_location": "集美区|国贸天峯",
+                "start_time": "16:17:50",
+                "line_amount": 12.81,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 96.89
+          }
+        },
+        {
+          "_file": "pictures/花小猪打车行程单-2条乘车记录_page_01.jpg",
+          "_doc_type": "trip",
+          "output": {
+            "type": "itinerary",
+            "attachment_name": null,
+            "vendor": "花小猪打车",
+            "transaction_date": "2024-03-04",
+            "start_date": "2024-01-21",
+            "end_date": "2024-02-08",
+            "city": "福州市",
+            "invoice_line_id": null,
+            "trips": [
+              {
+                "start_location": "汉庭酒店(福州火车站店)",
+                "end_location": "上街镇工贸路移动分公司大楼-东南门",
+                "start_time": "20:13:00",
+                "line_amount": 31.4,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "S201中国移动福建福州数据中心",
+                "end_location": "福建省福州市晋安区北环中路216号电建公司",
+                "start_time": "17:32:00",
+                "line_amount": 89.92,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 121.32
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单01+苏州合景万怡+0816+692.60.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "苏州",
+            "checkin_date": "2024-08-16",
+            "checkout_date": "2024-08-17",
+            "currency": "CNY",
+            "amount": 692.6,
+            "invoice_line_id": "78674685"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单03+苏州希尔顿+0820+663.45.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "苏州",
+            "checkin_date": "2024-08-20",
+            "checkout_date": "2024-08-21",
+            "currency": "CNY",
+            "amount": 663.45,
+            "invoice_line_id": "225166965866872"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单04+苏州AC酒店+0821+527.26.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "苏州",
+            "checkin_date": "2024-08-21",
+            "checkout_date": "2024-08-22",
+            "currency": "CNY",
+            "amount": 527.26,
+            "invoice_line_id": "76890289"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单06+天津瑞吉金融街+0823+800.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "天津",
+            "checkin_date": "2024-08-23",
+            "checkout_date": "2024-08-24",
+            "currency": "CNY",
+            "amount": 800.0,
+            "invoice_line_id": "73657449"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单07+万丽天津宾馆+0824+650.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "天津",
+            "checkin_date": "2024-08-24",
+            "checkout_date": "2024-08-25",
+            "currency": "CNY",
+            "amount": 650.0,
+            "invoice_line_id": "73645091"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单08+天津康莱德+0825+800.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "天津市",
+            "checkin_date": "2024-08-25",
+            "checkout_date": "2024-08-26",
+            "currency": "CNY",
+            "amount": 800,
+            "invoice_line_id": "278482 A"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单09+苏州福朋喜来登+0826+780.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "苏州",
+            "checkin_date": "2024-08-26",
+            "checkout_date": "2024-08-27",
+            "currency": "CNY",
+            "amount": 780.0,
+            "invoice_line_id": "XXXXX7512"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单10+苏州希尔顿+0827+663.45.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "北京",
+            "checkin_date": "2024-08-27",
+            "checkout_date": "2024-08-28",
+            "currency": "CNY",
+            "amount": 663.45,
+            "invoice_line_id": "3108321525"
+          }
+        }
+      ],
+      "end_time": "2025-11-07T07:54:20.925771Z",
+      "elapsed_seconds": 81.00169587135315
+    },
+    {
+      "model": "qwen2.5-vl-3b-instruct",
+      "start_time": "2025-11-07T07:54:20.925779Z",
+      "cases": [
+        {
+          "_file": "pictures/携程用车行程单_page_01.jpg",
+          "_doc_type": "trip",
+          "output": {
+            "type": "itinerary",
+            "attachment_name": null,
+            "vendor": "携程",
+            "transaction_date": "2025-08-22",
+            "start_date": null,
+            "end_date": null,
+            "city": "北京",
+            "invoice_line_id": "CTrip-TRIP TABLE",
+            "trips": [
+              {
+                "start_location": "汉庭酒店(北京前门大街店)",
+                "end_location": "大兴国际机场",
+                "start_time": "13:55:00",
+                "line_amount": "103.00",
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": "103.00"
+          }
+        },
+        {
+          "_file": "pictures/曹操出行电子行程单-2条乘车记录_page_01.jpg",
+          "_doc_type": "trip",
+          "output": {
+            "type": "itinerary",
+            "attachment_name": null,
+            "vendor": "曹操出行",
+            "transaction_date": "2023-01-18",
+            "start_date": null,
+            "end_date": null,
+            "city": "福州",
+            "invoice_line_id": null,
+            "trips": [
+              {
+                "start_location": "中国进出口银行(福建省分行)",
+                "end_location": "福州软件园A区28号楼",
+                "start_time": "2023-01-13 14:10",
+                "line_amount": "39.72元",
+                "currency": "CNY"
+              },
+              {
+                "start_location": "福州软件园A区28号楼",
+                "end_location": "中国进出口银行(福建省分行)",
+                "start_time": "2023-01-13 12:58",
+                "line_amount": "43.43元",
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": "83.15元"
+          }
+        },
+        {
+          "_file": "pictures/滴滴出行行程报销单-7条乘车记录_page_01.jpg",
+          "_doc_type": "trip",
+          "output": {
+            "type": "itinerary",
+            "attachment_name": null,
+            "vendor": "滴滴出行",
+            "transaction_date": null,
+            "start_date": "2023-12-28",
+            "end_date": "2024-01-16",
+            "city": "厦门市",
+            "invoice_line_id": null,
+            "trips": [
+              {
+                "start_location": "集美大道咪咕新空文化科技(厦门)有限公司东北侧",
+                "end_location": "集美区|国贸天峯",
+                "start_time": "12:28 23:12 周四",
+                "line_amount": "14.86",
+                "currency": "CNY"
+              },
+              {
+                "start_location": "集美大道咪咕新空文化科技(厦门)有限公司",
+                "end_location": "集美区|国贸天峯",
+                "start_time": "20:09 周二",
+                "line_amount": "13.02",
+                "currency": "CNY"
+              },
+              {
+                "start_location": "集美大道咪咕新空文化科技(厦门)有限公司",
+                "end_location": "集美区|国贸天峯",
+                "start_time": "20:19 周三",
+                "line_amount": "13.92",
+                "currency": "CNY"
+              },
+              {
+                "start_location": "集美大道咪咕新空文化科技(厦门)有限公司",
+                "end_location": "集美区|国贸天峯",
+                "start_time": "19:57 周四",
+                "line_amount": "13.92",
+                "currency": "CNY"
+              },
+              {
+                "start_location": "集美大道咪咕新空文化科技(厦门)有限公司",
+                "end_location": "集美区|国贸天峯",
+                "start_time": "20:31 周五",
+                "line_amount": "14.44",
+                "currency": "CNY"
+              },
+              {
+                "start_location": "集美大道咪咕新空文化科技(厦门)有限公司",
+                "end_location": "集美区|国贸天峯",
+                "start_time": "20:44 周一",
+                "line_amount": "13.92",
+                "currency": "CNY"
+              },
+              {
+                "start_location": "集美大道咪咕新空文化科技(厦门)有限公司",
+                "end_location": "集美区|国贸天峯",
+                "start_time": "17:50 周二",
+                "line_amount": "12.81",
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": "96.89"
+          }
+        },
+        {
+          "_file": "pictures/花小猪打车行程单-2条乘车记录_page_01.jpg",
+          "_doc_type": "trip",
+          "output": {
+            "type": "itinerary",
+            "attachment_name": null,
+            "vendor": "花小猪打车",
+            "transaction_date": "2024-01-21 至 2024-02-08",
+            "start_date": "2024-01-21",
+            "end_date": "2024-02-08",
+            "city": "福州市",
+            "invoice_line_id": null,
+            "trips": [
+              {
+                "start_location": "汉庭酒店(福州火车站店)",
+                "end_location": "上街镇工贸路移动公司大楼--东南1门",
+                "start_time": "20:13",
+                "line_amount": "31.40",
+                "currency": "CNY"
+              },
+              {
+                "start_location": "S201|中国移动福建福州数据中心",
+                "end_location": "福建省福州市晋安区北环中路216号电建二公司",
+                "start_time": "17:32",
+                "line_amount": "89.92",
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": "121.32"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单01+苏州合景万怡+0816+692.60.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "苏州合景",
+            "checkin_date": "2024-08-16",
+            "checkout_date": "2024-08-24",
+            "currency": "CNY",
+            "amount": "692.60",
+            "invoice_line_id": "78674685"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单03+苏州希尔顿+0820+663.45.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "Beijing",
+            "checkin_date": "2024-08-21",
+            "checkout_date": "2024-08-24",
+            "currency": "CNY",
+            "amount": "663.45",
+            "invoice_line_id": "Folio No."
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单04+苏州AC酒店+0821+527.26.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "苏州",
+            "checkin_date": "2024-08-21",
+            "checkout_date": "2024-08-22",
+            "currency": "CNY",
+            "amount": "527.26",
+            "invoice_line_id": "万豪国际集团旗舰店"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单06+天津瑞吉金融街+0823+800.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "天津",
+            "checkin_date": "2024-08-23",
+            "checkout_date": "2024-08-24",
+            "currency": "CNY",
+            "amount": "800.00",
+            "invoice_line_id": null
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单07+万丽天津宾馆+0824+650.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "天津",
+            "checkin_date": "2024-08-25",
+            "checkout_date": "2024-08-26",
+            "currency": "CNY",
+            "amount": "650.00",
+            "invoice_line_id": "1"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单08+天津康莱德+0825+800.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "TIANJIN",
+            "checkin_date": "2024-08-26",
+            "checkout_date": "2024-08-27",
+            "currency": "CNY",
+            "amount": "800.00",
+            "invoice_line_id": "1520435"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单09+苏州福朋喜来登+0826+780.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "天津",
+            "checkin_date": "2024-08-26",
+            "checkout_date": "2024-08-27",
+            "currency": "CNY",
+            "amount": "780.00 人民币",
+            "invoice_line_id": "1 of 1"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单10+苏州希尔顿+0827+663.45.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "Beijing",
+            "checkin_date": "2024-08-28",
+            "checkout_date": "2024-08-29",
+            "currency": "CNY",
+            "amount": "-663.45",
+            "invoice_line_id": "3108321525"
+          }
+        }
+      ],
+      "end_time": "2025-11-07T07:54:53.389407Z",
+      "elapsed_seconds": 32.463632583618164
+    },
+    {
+      "model": "qwen2.5-vl-7b-instruct",
+      "start_time": "2025-11-07T07:54:53.389413Z",
+      "cases": [
+        {
+          "_file": "pictures/携程用车行程单_page_01.jpg",
+          "_doc_type": "trip",
+          "output": {
+            "type": "itinerary",
+            "attachment_name": "",
+            "vendor": "携程用车行程单 CTRIP-TRIP TABLE",
+            "transaction_date": "2025-08-22至2025-08-22",
+            "start_date": "2025-08-22",
+            "end_date": "2025-08-22",
+            "city": "北京",
+            "invoice_line_id": null,
+            "trips": [
+              {
+                "start_location": "汉庭酒店(北京前门大街店)",
+                "end_location": "大兴国际机场",
+                "start_time": "13:55:00",
+                "line_amount": "103.00",
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": "103.00"
+          }
+        },
+        {
+          "_file": "pictures/曹操出行电子行程单-2条乘车记录_page_01.jpg",
+          "_doc_type": "trip",
+          "output": {
+            "type": "itinerary",
+            "attachment_name": "",
+            "vendor": "曹操出行 CAOCACAO ITINERARY",
+            "transaction_date": "2023-01-18",
+            "start_date": null,
+            "end_date": null,
+            "city": "福州",
+            "invoice_line_id": null,
+            "trips": [
+              {
+                "start_location": "中国进出口银行 (福建省分行)",
+                "end_location": "福州软件园A区28号楼",
+                "start_time": "14:10",
+                "line_amount": "39.72元",
+                "currency": "CNY"
+              },
+              {
+                "start_location": "福州软件园 A 区 28 号楼",
+                "end_location": "中国进出口银行 (福建省分行)",
+                "start_time": "12:58",
+                "line_amount": "43.43元",
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": "83.15元"
+          }
+        },
+        {
+          "_file": "pictures/滴滴出行行程报销单-7条乘车记录_page_01.jpg",
+          "_doc_type": "trip",
+          "output": {
+            "type": "itinerary",
+            "attachment_name": "",
+            "vendor": "滴滴出行-行程单",
+            "transaction_date": null,
+            "start_date": null,
+            "end_date": null,
+            "city": "厦门市",
+            "invoice_line_id": null,
+            "trips": [
+              {
+                "start_location": "集美大道|咪咕新空文化科技(厦门有限公司东北侧",
+                "end_location": "集美区国贸天峯",
+                "start_time": "20:31 星期四",
+                "line_amount": "14.86 元",
+                "currency": "元"
+              },
+              {
+                "start_location": "集美大道|咪咕新空文化科技·厦门有限公司",
+                "end_location": "集美区国贸天峯",
+                "start_time": "20:09 星期二",
+                "line_amount": "13.02 元",
+                "currency": "元"
+              },
+              {
+                "start_location": "集美大道|咪咕新空文化科技·厦门有限公司",
+                "end_location": "集美区国贸天峯",
+                "start_time": "20:19 星期三",
+                "line_amount": "13.92 元",
+                "currency": "元"
+              },
+              {
+                "start_location": "集美大道|咪咕新空文化科技·厦门有限公司",
+                "end_location": "集美区国贸天峯",
+                "start_time": "19:57 星期四",
+                "line_amount": "13.92 元",
+                "currency": "元"
+              },
+              {
+                "start_location": "集美大道|咪咕新空文化科技·厦门有限公司",
+                "end_location": "集美区国贸天峯",
+                "start_time": "20:31 星期五",
+                "line_amount": "14.44 元",
+                "currency": "元"
+              },
+              {
+                "start_location": "集美大道|咪咕新空文化科技·厦门有限公司",
+                "end_location": "集美区国贸天峯",
+                "start_time": "20:44 星期一",
+                "line_amount": "13.92 元",
+                "currency": "元"
+              },
+              {
+                "start_location": "集美大道|咪咕新空文化科技·厦门有限公司",
+                "end_location": "集美区国贸天峯",
+                "start_time": "17:50 星期二",
+                "line_amount": "12.81 元",
+                "currency": "元"
+              }
+            ],
+            "total_amount": "合计共计96.89元"
+          }
+        },
+        {
+          "_file": "pictures/花小猪打车行程单-2条乘车记录_page_01.jpg",
+          "_doc_type": "trip",
+          "output": {
+            "type": "itinerary",
+            "attachment_name": "",
+            "vendor": "花小猪打车",
+            "transaction_date": null,
+            "start_date": "2024-01-21",
+            "end_date": "2024-02-08",
+            "city": "福州市",
+            "invoice_line_id": null,
+            "trips": [
+              {
+                "start_location": "汉庭酒店(福州火车站店)",
+                "end_location": "上街镇工贸路移动省公司大楼东南门",
+                "start_time": "20:15 PM 日日",
+                "line_amount": "31.40 元",
+                "currency": "CNY"
+              },
+              {
+                "start_location": "S201中国移动福建福州数据中心",
+                "end_location": "福建省福州市晋安区北环中路电建二公司",
+                "start_time": "17:32 AM 星期四",
+                "line_amount": "89.92 元",
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": "121.32元"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单01+苏州合景万怡+0816+692.60.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": "",
+            "city": "苏州合景 Suzhou Mudu",
+            "checkin_date": "2024-08-16",
+            "checkout_date": "2024-08-17",
+            "currency": "CNY",
+            "amount": "-￥692.60",
+            "invoice_line_id": ""
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单03+苏州希尔顿+0820+663.45.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": "",
+            "city": "苏州",
+            "checkin_date": "2024-08-20",
+            "checkout_date": "2024-08-21",
+            "currency": "CNY",
+            "amount": -663.45,
+            "invoice_line_id": ""
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单04+苏州AC酒店+0821+527.26.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": "",
+            "city": "苏州",
+            "checkin_date": "2024-08-24",
+            "checkout_date": "2024-08-24",
+            "currency": "CNY",
+            "amount": "-527.26",
+            "invoice_line_id": ""
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单06+天津瑞吉金融街+0823+800.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": "",
+            "city": "天津",
+            "checkin_date": "2023-08-24",
+            "checkout_date": "2023-08-24",
+            "currency": "RMB",
+            "amount": -800.0,
+            "invoice_line_id": ""
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单07+万丽天津宾馆+0824+650.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": "",
+            "city": "天津",
+            "checkin_date": "2024-08-25",
+            "checkout_date": null,
+            "currency": "CNY",
+            "amount": -650.0,
+            "invoice_line_id": ""
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单08+天津康莱德+0825+800.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": "",
+            "city": "天津",
+            "checkin_date": "2024-08-25",
+            "checkout_date": "2024-08-26",
+            "currency": "CNY",
+            "amount": -800.0,
+            "invoice_line_id": ""
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单09+苏州福朋喜来登+0826+780.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": "",
+            "city": "天津",
+            "checkin_date": "2024-08-26",
+            "checkout_date": "2024-08-27",
+            "currency": "CNY",
+            "amount": 780.0,
+            "invoice_line_id": ""
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单10+苏州希尔顿+0827+663.45.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": "",
+            "city": "苏州",
+            "checkin_date": "2024-08-27",
+            "checkout_date": "2024-08-29",
+            "currency": "CNY",
+            "amount": -663.45,
+            "invoice_line_id": ""
+          }
+        }
+      ],
+      "end_time": "2025-11-07T07:55:36.461480Z",
+      "elapsed_seconds": 43.072070360183716
+    },
+    {
+      "model": "qwen2.5-vl-32b-instruct",
+      "start_time": "2025-11-07T07:55:36.461485Z",
+      "cases": [
+        {
+          "_file": "pictures/携程用车行程单_page_01.jpg",
+          "_doc_type": "trip",
+          "output": {
+            "type": "itinerary",
+            "attachment_name": null,
+            "vendor": "携程用车",
+            "transaction_date": "2025-08-25",
+            "start_date": "2025-08-22",
+            "end_date": "2025-08-22",
+            "city": "北京",
+            "invoice_line_id": null,
+            "trips": [
+              {
+                "start_location": "汉庭酒店(北京前门大街店)",
+                "end_location": "大兴国际机场",
+                "start_time": "13:55:00",
+                "line_amount": 103.0,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 103.0
+          }
+        },
+        {
+          "_file": "pictures/曹操出行电子行程单-2条乘车记录_page_01.jpg",
+          "_doc_type": "trip",
+          "output": {
+            "type": "itinerary",
+            "attachment_name": null,
+            "vendor": "曹操出行 (CAO CAO)",
+            "transaction_date": "2023-01-18",
+            "start_date": "2023-01-13",
+            "end_date": "2023-01-13",
+            "city": "福州",
+            "invoice_line_id": null,
+            "trips": [
+              {
+                "start_location": "中国进出口银行(福建省分行)",
+                "end_location": "福州软件园A区28号楼",
+                "start_time": "14:10",
+                "line_amount": 39.72,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "福州软件园A区28号楼",
+                "end_location": "中国进出口银行(福建省分行)",
+                "start_time": "12:58",
+                "line_amount": 43.43,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 83.15
+          }
+        },
+        {
+          "_file": "pictures/滴滴出行行程报销单-7条乘车记录_page_01.jpg",
+          "_doc_type": "trip",
+          "output": {
+            "type": "itinerary",
+            "attachment_name": null,
+            "vendor": "滴滴出行-企业版",
+            "transaction_date": "2024-01-19",
+            "start_date": "2023-12-28",
+            "end_date": "2024-01-16",
+            "city": "厦门市",
+            "invoice_line_id": "18759121718",
+            "trips": [
+              {
+                "start_location": "集美大润发新空文化科技厦门有限公司东北侧",
+                "end_location": "集美学区国贸天玺",
+                "start_time": "12:28:31",
+                "line_amount": 14.86,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "集美大学附近新空文化科技·厦门有限公司",
+                "end_location": "集美学区国贸天玺",
+                "start_time": "01:09:20",
+                "line_amount": 13.02,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "集美大道阳朔新空文化科技·厦门有限公司",
+                "end_location": "集美学区国贸大厦",
+                "start_time": "01:10:20",
+                "line_amount": 13.92,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "东莞人深圳站航空文化科技·厦门有限公司",
+                "end_location": "集美学区国贸天嘉",
+                "start_time": "01:11:19",
+                "line_amount": 13.92,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "集英大厦网航星空文化科技·厦门有限公司",
+                "end_location": "集美学区国贸天宝",
+                "start_time": "01:12:20",
+                "line_amount": 14.44,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "集安大酒店前街文化科技·厦门有限公司",
+                "end_location": "集美学区国贸天豪",
+                "start_time": "01:15:20",
+                "line_amount": 13.92,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "集美大街网站商务文化科技·厦门有限公司",
+                "end_location": "集美学区国贸天家",
+                "start_time": "01:16:17",
+                "line_amount": 12.81,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 96.89
+          }
+        },
+        {
+          "_file": "pictures/花小猪打车行程单-2条乘车记录_page_01.jpg",
+          "_doc_type": "trip",
+          "output": {
+            "type": "itinerary",
+            "attachment_name": null,
+            "vendor": "花小猪打车",
+            "transaction_date": "2024-03-04",
+            "start_date": "2024-01-21",
+            "end_date": "2024-02-08",
+            "city": "福州市",
+            "invoice_line_id": "共2笔行程,合计121.32元",
+            "trips": [
+              {
+                "start_location": "汉庭酒店(福州火车站店)",
+                "end_location": "上海铁路局移动公司大楼东街口门卫室",
+                "start_time": "09:57:16",
+                "line_amount": 31.41,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "福建省厦门市思明区湖滨南路326号中国移动大厦营业厅中心",
+                "end_location": "福建省莆田市城厢区龙桥街道学园南街与梅峰路交叉路口东南侧电建二公司",
+                "start_time": "02:08:17:52周日",
+                "line_amount": 89.92,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 121.32
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单01+苏州合景万怡+0816+692.60.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "苏州合景",
+            "checkin_date": "2024-08-16",
+            "checkout_date": "2024-08-17",
+            "currency": "CNY",
+            "amount": 692.6,
+            "invoice_line_id": ""
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单03+苏州希尔顿+0820+663.45.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "苏州",
+            "checkin_date": "2024-08-20",
+            "checkout_date": "2024-08-21",
+            "currency": "CNY",
+            "amount": -663.45,
+            "invoice_line_id": "MS003"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单04+苏州AC酒店+0821+527.26.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "苏州",
+            "checkin_date": "2021-08-24",
+            "checkout_date": "2022-08-24",
+            "currency": "CNY",
+            "amount": -527.26,
+            "invoice_line_id": "XXXXX7512"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单06+天津瑞吉金融街+0823+800.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "天津",
+            "checkin_date": "2023-08-24",
+            "checkout_date": "2024-08-24",
+            "currency": "CNY",
+            "amount": 800.0,
+            "invoice_line_id": "7659"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单07+万丽天津宾馆+0824+650.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "天津",
+            "checkin_date": "2024-08-25",
+            "checkout_date": "null",
+            "currency": "CNY",
+            "amount": 650.0,
+            "invoice_line_id": "XXXXX7512"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单08+天津康莱德+0825+800.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "天津",
+            "checkin_date": "2024-08-25",
+            "checkout_date": "2024-08-26",
+            "currency": "CNY",
+            "amount": 800.0,
+            "invoice_line_id": "Folio No/Che: 278482A"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单09+苏州福朋喜来登+0826+780.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "天津 (Tianjin)",
+            "checkin_date": "2026-08-24",
+            "checkout_date": "2027-08-24",
+            "currency": "CNY",
+            "amount": 780.0,
+            "invoice_line_id": "XXXXX7512"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单10+苏州希尔顿+0827+663.45.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "苏州",
+            "checkin_date": "2023-07-28",
+            "checkout_date": "2023-08-28",
+            "currency": "CNY",
+            "amount": -663.45,
+            "invoice_line_id": "-663.45"
+          }
+        }
+      ],
+      "end_time": "2025-11-07T07:57:08.204536Z",
+      "elapsed_seconds": 91.74305438995361
+    },
+    {
+      "model": "qwen2.5-vl-72b-instruct",
+      "start_time": "2025-11-07T07:57:08.204542Z",
+      "cases": [
+        {
+          "_file": "pictures/携程用车行程单_page_01.jpg",
+          "_doc_type": "trip",
+          "output": {
+            "type": "itinerary",
+            "attachment_name": null,
+            "vendor": "携程",
+            "transaction_date": "2025-08-25",
+            "start_date": "2025-08-22",
+            "end_date": "2025-08-22",
+            "city": "北京",
+            "invoice_line_id": null,
+            "trips": [
+              {
+                "start_location": "汉庭酒店(北京前门大街店)",
+                "end_location": "大兴国际机场",
+                "start_time": "13:55:00",
+                "line_amount": 103.0,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 103.0
+          }
+        },
+        {
+          "_file": "pictures/曹操出行电子行程单-2条乘车记录_page_01.jpg",
+          "_doc_type": "trip",
+          "output": {
+            "type": "itinerary",
+            "attachment_name": null,
+            "vendor": "曹操出行",
+            "transaction_date": "2023-01-18",
+            "start_date": "2023-01-13",
+            "end_date": "2023-01-13",
+            "city": "福州",
+            "invoice_line_id": null,
+            "trips": [
+              {
+                "start_location": "中国进出口银行(福建省分行)",
+                "end_location": "福州软件园A区28号楼",
+                "start_time": "14:10",
+                "line_amount": 39.72,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "福州软件园A区28号楼",
+                "end_location": "中国进出口银行(福建省分行)",
+                "start_time": "12:58",
+                "line_amount": 43.43,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 83.15
+          }
+        },
+        {
+          "_file": "pictures/滴滴出行行程报销单-7条乘车记录_page_01.jpg",
+          "_doc_type": "trip",
+          "output": {
+            "type": "itinerary",
+            "attachment_name": null,
+            "vendor": "滴滴出行",
+            "transaction_date": "2024-01-19",
+            "start_date": "2023-12-28",
+            "end_date": "2024-01-16",
+            "city": "厦门市",
+            "invoice_line_id": null,
+            "trips": [
+              {
+                "start_location": "集美大道|咪咕新空文化科技(厦门)有限公司东北侧",
+                "end_location": "集美区国贸天峯",
+                "start_time": "12:28:23",
+                "line_amount": 14.86,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "集美大道|咪咕新空文化科技(厦门)有限公司",
+                "end_location": "集美区国贸天峯",
+                "start_time": "01:09:20",
+                "line_amount": 13.02,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "集美大道|咪咕新空文化科技(厦门)有限公司",
+                "end_location": "集美区国贸天峯",
+                "start_time": "01:10:20",
+                "line_amount": 13.92,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "集美大道|咪咕新空文化科技(厦门)有限公司",
+                "end_location": "集美区国贸天峯",
+                "start_time": "01:11:19",
+                "line_amount": 13.92,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "集美大道|咪咕新空文化科技(厦门)有限公司",
+                "end_location": "集美区国贸天峯",
+                "start_time": "01:12:20",
+                "line_amount": 14.44,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "集美大道|咪咕新空文化科技(厦门)有限公司",
+                "end_location": "集美区国贸天峯",
+                "start_time": "01:15:20",
+                "line_amount": 13.92,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "集美大道|咪咕新空文化科技(厦门)有限公司",
+                "end_location": "集美区国贸天峯",
+                "start_time": "01:16:17",
+                "line_amount": 12.81,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 96.89
+          }
+        },
+        {
+          "_file": "pictures/花小猪打车行程单-2条乘车记录_page_01.jpg",
+          "_doc_type": "trip",
+          "output": {
+            "type": "itinerary",
+            "attachment_name": null,
+            "vendor": "花小猪打车",
+            "transaction_date": "2024-03-04",
+            "start_date": "2024-01-21",
+            "end_date": "2024-02-08",
+            "city": "福州",
+            "invoice_line_id": null,
+            "trips": [
+              {
+                "start_location": "汉庭酒店(福州火车站店)",
+                "end_location": "上街镇工业路移动有公司大楼-东门",
+                "start_time": "20:15",
+                "line_amount": 31.4,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "S201中国移动福建福州数据中心",
+                "end_location": "福建省福州市晋安区五环中路216号电建二公司",
+                "start_time": "08:17",
+                "line_amount": 89.92,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 121.32
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单01+苏州合景万怡+0816+692.60.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "苏州",
+            "checkin_date": "2024-08-16",
+            "checkout_date": "2024-08-17",
+            "currency": "CNY",
+            "amount": 692.6,
+            "invoice_line_id": "XXXXX7512"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单03+苏州希尔顿+0820+663.45.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "苏州",
+            "checkin_date": "2024-08-20",
+            "checkout_date": "2024-08-21",
+            "currency": "CNY",
+            "amount": 663.45,
+            "invoice_line_id": "MS003"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单04+苏州AC酒店+0821+527.26.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "苏州",
+            "checkin_date": "2018-08-21",
+            "checkout_date": "2018-08-22",
+            "currency": "CNY",
+            "amount": 527.26,
+            "invoice_line_id": "76890289"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单06+天津瑞吉金融街+0823+800.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "天津",
+            "checkin_date": "2024-08-23",
+            "checkout_date": "2024-08-24",
+            "currency": "CNY",
+            "amount": 800.0,
+            "invoice_line_id": "CCCHEN782_E"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单07+万丽天津宾馆+0824+650.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "天津",
+            "checkin_date": "2024-08-24",
+            "checkout_date": "2025-08-24",
+            "currency": "CNY",
+            "amount": 650.0,
+            "invoice_line_id": "73645091"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单08+天津康莱德+0825+800.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "天津",
+            "checkin_date": "2024-08-25",
+            "checkout_date": "2024-08-26",
+            "currency": "CNY",
+            "amount": 800.0,
+            "invoice_line_id": "3121677344"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单09+苏州福朋喜来登+0826+780.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "苏州",
+            "checkin_date": "2024-08-26",
+            "checkout_date": "2024-08-27",
+            "currency": "CNY",
+            "amount": 780.0,
+            "invoice_line_id": "Xxxxxx7512"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单10+苏州希尔顿+0827+663.45.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "苏州",
+            "checkin_date": "2024-08-27",
+            "checkout_date": "2024-08-28",
+            "currency": "CNY",
+            "amount": 663.45,
+            "invoice_line_id": "3108321525"
+          }
+        }
+      ],
+      "end_time": "2025-11-07T07:58:24.816457Z",
+      "elapsed_seconds": 76.61191987991333
+    },
+    {
+      "model": "qwen3-vl-8b-instruct",
+      "start_time": "2025-11-07T07:58:24.816464Z",
+      "cases": [
+        {
+          "_file": "pictures/携程用车行程单_page_01.jpg",
+          "_doc_type": "trip",
+          "output": {
+            "type": "itinerary",
+            "attachment_name": null,
+            "vendor": "携程",
+            "transaction_date": "2025-08-25",
+            "start_date": "2025-08-22",
+            "end_date": "2025-08-22",
+            "city": "北京",
+            "invoice_line_id": null,
+            "trips": [
+              {
+                "start_location": "汉庭酒店(北京前门大街店)",
+                "end_location": "大兴国际机场",
+                "start_time": "2025-08-22 13:55:00",
+                "line_amount": 103.0,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 103.0
+          }
+        },
+        {
+          "_file": "pictures/曹操出行电子行程单-2条乘车记录_page_01.jpg",
+          "_doc_type": "trip",
+          "output": {
+            "type": "itinerary",
+            "attachment_name": null,
+            "vendor": "曹操出行",
+            "transaction_date": "2023-01-18",
+            "start_date": "2023-01-13",
+            "end_date": "2023-01-13",
+            "city": "福州",
+            "invoice_line_id": null,
+            "trips": [
+              {
+                "start_location": "中国进出口银行(福建省分行)",
+                "end_location": "福州软件园A区28号楼",
+                "start_time": "14:10",
+                "line_amount": 39.72,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "福州软件园A区28号楼",
+                "end_location": "中国进出口银行(福建省分行)",
+                "start_time": "12:58",
+                "line_amount": 43.43,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 83.15
+          }
+        },
+        {
+          "_file": "pictures/滴滴出行行程报销单-7条乘车记录_page_01.jpg",
+          "_doc_type": "trip",
+          "output": {
+            "type": "itinerary",
+            "attachment_name": null,
+            "vendor": "滴滴出行",
+            "transaction_date": "2024-01-19",
+            "start_date": "2023-12-28",
+            "end_date": "2024-01-16",
+            "city": "厦门市",
+            "invoice_line_id": null,
+            "trips": [
+              {
+                "start_location": "集美大道|咪咕新空文化科技(厦门)有限公司东北侧",
+                "end_location": "集美区|国贸天峯",
+                "start_time": "23:12",
+                "line_amount": 14.86,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "集美大道|咪咕新空文化科技-厦门有限公司",
+                "end_location": "集美区|国贸天峯",
+                "start_time": "20:09",
+                "line_amount": 13.02,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "集美大道|咪咕新空文化科技-厦门有限公司",
+                "end_location": "集美区|国贸天峯",
+                "start_time": "20:19",
+                "line_amount": 13.92,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "集美大道|咪咕新空文化科技-厦门有限公司",
+                "end_location": "集美区|国贸天峯",
+                "start_time": "19:57",
+                "line_amount": 13.92,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "集美大道|咪咕新空文化科技-厦门有限公司",
+                "end_location": "集美区|国贸天峯",
+                "start_time": "20:31",
+                "line_amount": 14.44,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "集美大道|咪咕新空文化科技-厦门有限公司",
+                "end_location": "集美区|国贸天峯",
+                "start_time": "20:44",
+                "line_amount": 13.92,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "集美大道|咪咕新空文化科技-厦门有限公司",
+                "end_location": "集美区|国贸天峯",
+                "start_time": "17:50",
+                "line_amount": 12.81,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 96.89
+          }
+        },
+        {
+          "_file": "pictures/花小猪打车行程单-2条乘车记录_page_01.jpg",
+          "_doc_type": "trip",
+          "output": {
+            "type": "itinerary",
+            "attachment_name": null,
+            "vendor": "花小猪打车",
+            "transaction_date": "2024-03-04",
+            "start_date": "2024-01-21",
+            "end_date": "2024-02-08",
+            "city": "福州市",
+            "invoice_line_id": null,
+            "trips": [
+              {
+                "start_location": "汉庭酒店(福州火车站店)",
+                "end_location": "上街镇工贸路移动省公司大楼-东南1门",
+                "start_time": "20:13",
+                "line_amount": 31.4,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "S201|中国移动福建福州数据中心",
+                "end_location": "福建省福州市晋安区北环中路216号电建二公司",
+                "start_time": "17:32",
+                "line_amount": 89.92,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 121.32
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单01+苏州合景万怡+0816+692.60.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "苏州",
+            "checkin_date": "2024-08-16",
+            "checkout_date": "2024-08-17",
+            "currency": "CNY",
+            "amount": 692.6,
+            "invoice_line_id": "78674685"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单03+苏州希尔顿+0820+663.45.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "北京",
+            "checkin_date": "2024-08-20",
+            "checkout_date": "2024-08-21",
+            "currency": "CNY",
+            "amount": 663.45,
+            "invoice_line_id": "MS003"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单04+苏州AC酒店+0821+527.26.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "苏州市",
+            "checkin_date": "2021-08-24",
+            "checkout_date": "2022-08-24",
+            "currency": "CNY",
+            "amount": 527.26,
+            "invoice_line_id": "76890289"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单06+天津瑞吉金融街+0823+800.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "天津",
+            "checkin_date": "2024-08-23",
+            "checkout_date": "2024-08-24",
+            "currency": "CNY",
+            "amount": 800.0,
+            "invoice_line_id": "CCHEN782.E"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单07+万丽天津宾馆+0824+650.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "天津",
+            "checkin_date": "2024-08-24",
+            "checkout_date": "2024-08-25",
+            "currency": "CNY",
+            "amount": 650.0,
+            "invoice_line_id": "73645091"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单08+天津康莱德+0825+800.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "天津市",
+            "checkin_date": "2024-08-25",
+            "checkout_date": "2024-08-26",
+            "currency": "CNY",
+            "amount": 800.0,
+            "invoice_line_id": "278482 A"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单09+苏州福朋喜来登+0826+780.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "苏州",
+            "checkin_date": "2024-08-26",
+            "checkout_date": "2024-08-27",
+            "currency": "CNY",
+            "amount": 780.0,
+            "invoice_line_id": "XXXXX7512"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单10+苏州希尔顿+0827+663.45.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "苏州",
+            "checkin_date": "2024-08-27",
+            "checkout_date": "2024-08-28",
+            "currency": "CNY",
+            "amount": 663.45,
+            "invoice_line_id": "3108321525"
+          }
+        }
+      ],
+      "end_time": "2025-11-07T07:59:02.531057Z",
+      "elapsed_seconds": 37.714598178863525
+    },
+    {
+      "model": "qwen3-vl-30b-a3b-instruct",
+      "start_time": "2025-11-07T07:59:02.531064Z",
+      "cases": [
+        {
+          "_file": "pictures/携程用车行程单_page_01.jpg",
+          "_doc_type": "trip",
+          "output": {
+            "type": "itinerary",
+            "attachment_name": null,
+            "vendor": "携程",
+            "transaction_date": "2025-08-25",
+            "start_date": "2025-08-22",
+            "end_date": "2025-08-22",
+            "city": "北京",
+            "invoice_line_id": null,
+            "trips": [
+              {
+                "start_location": "汉庭酒店(北京前门大街店)",
+                "end_location": "大兴国际机场",
+                "start_time": "13:55:00",
+                "line_amount": 103.0,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 103.0
+          }
+        },
+        {
+          "_file": "pictures/曹操出行电子行程单-2条乘车记录_page_01.jpg",
+          "_doc_type": "trip",
+          "output": {
+            "type": "itinerary",
+            "attachment_name": null,
+            "vendor": "曹操出行",
+            "transaction_date": "2023-01-18",
+            "start_date": "2023-01-13",
+            "end_date": "2023-01-13",
+            "city": "福州",
+            "invoice_line_id": "15280034956",
+            "trips": [
+              {
+                "start_location": "中国进出口银行(福建省分行)",
+                "end_location": "福州软件园A区28号楼",
+                "start_time": "14:10",
+                "line_amount": 39.72,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "福州软件园A区28号楼",
+                "end_location": "中国进出口银行(福建省分行)",
+                "start_time": "12:58",
+                "line_amount": 43.43,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 83.15
+          }
+        },
+        {
+          "_file": "pictures/滴滴出行行程报销单-7条乘车记录_page_01.jpg",
+          "_doc_type": "trip",
+          "output": {
+            "type": "itinerary",
+            "attachment_name": null,
+            "vendor": "滴滴出行",
+            "transaction_date": "2024-01-19",
+            "start_date": "2023-12-28",
+            "end_date": "2024-01-16",
+            "city": "厦门市",
+            "invoice_line_id": "DIDI TRAVEL - TRIP TABLE",
+            "trips": [
+              {
+                "start_location": "集美大道|咪咕新空文化科技(厦门)有限公司东北侧",
+                "end_location": "集美区|国贸天峯",
+                "start_time": "12:28",
+                "line_amount": 14.86,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "集美大道|咪咕新空文化科技-厦门有限公司",
+                "end_location": "集美区|国贸天峯",
+                "start_time": "01:09",
+                "line_amount": 13.02,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "集美大道|咪咕新空文化科技-厦门有限公司",
+                "end_location": "集美区|国贸天峯",
+                "start_time": "01:10",
+                "line_amount": 13.92,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "集美大道|咪咕新空文化科技-厦门有限公司",
+                "end_location": "集美区|国贸天峯",
+                "start_time": "01:11",
+                "line_amount": 13.92,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "集美大道|咪咕新空文化科技-厦门有限公司",
+                "end_location": "集美区|国贸天峯",
+                "start_time": "01:12",
+                "line_amount": 14.44,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "集美大道|咪咕新空文化科技-厦门有限公司",
+                "end_location": "集美区|国贸天峯",
+                "start_time": "01:15",
+                "line_amount": 13.92,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "集美大道|咪咕新空文化科技-厦门有限公司",
+                "end_location": "集美区|国贸天峯",
+                "start_time": "01:16",
+                "line_amount": 12.81,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 96.89
+          }
+        },
+        {
+          "_file": "pictures/花小猪打车行程单-2条乘车记录_page_01.jpg",
+          "_doc_type": "trip",
+          "output": {
+            "type": "itinerary",
+            "attachment_name": null,
+            "vendor": "花小猪打车",
+            "transaction_date": "2024-03-04",
+            "start_date": "2024-01-21",
+            "end_date": "2024-02-08",
+            "city": "福州市",
+            "invoice_line_id": null,
+            "trips": [
+              {
+                "start_location": "汉庭酒店(福州火车站店)",
+                "end_location": "上街镇工贸路移动省公司大楼-东南1门",
+                "start_time": "20:13",
+                "line_amount": 31.4,
+                "currency": "CNY"
+              },
+              {
+                "start_location": "S201|中国移动福建福州数据中心",
+                "end_location": "福建省福州市晋安区北环中路216号电建二公司",
+                "start_time": "17:32",
+                "line_amount": 89.92,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 121.32
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单01+苏州合景万怡+0816+692.60.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "苏州",
+            "checkin_date": "2024-08-16",
+            "checkout_date": "2024-08-17",
+            "currency": "CNY",
+            "amount": 692.6,
+            "invoice_line_id": "78674685"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单03+苏州希尔顿+0820+663.45.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "Beijing",
+            "checkin_date": "2024-08-20",
+            "checkout_date": "2024-08-21",
+            "currency": "CNY",
+            "amount": 663.45,
+            "invoice_line_id": "MS003"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单04+苏州AC酒店+0821+527.26.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "苏州",
+            "checkin_date": "2024-08-21",
+            "checkout_date": "2024-08-22",
+            "currency": "CNY",
+            "amount": 527.26,
+            "invoice_line_id": "76890289"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单06+天津瑞吉金融街+0823+800.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "天津",
+            "checkin_date": "23/08/24",
+            "checkout_date": "24/08/24",
+            "currency": "CNY",
+            "amount": 800.0,
+            "invoice_line_id": "XXXXXX7512"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单07+万丽天津宾馆+0824+650.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "天津",
+            "checkin_date": "2024-08-24",
+            "checkout_date": "2024-08-25",
+            "currency": "CNY",
+            "amount": 650.0,
+            "invoice_line_id": "73645091"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单08+天津康莱德+0825+800.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "天津市",
+            "checkin_date": "2024-08-25",
+            "checkout_date": "2024-08-26",
+            "currency": "CNY",
+            "amount": 800.0,
+            "invoice_line_id": "3121677344"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单09+苏州福朋喜来登+0826+780.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "天津",
+            "checkin_date": "2024-08-26",
+            "checkout_date": "2024-08-27",
+            "currency": "CNY",
+            "amount": 780.0,
+            "invoice_line_id": "QGE014"
+          }
+        },
+        {
+          "_file": "pictures/酒店水单刷卡单10+苏州希尔顿+0827+663.45.jpg",
+          "_doc_type": "hotel",
+          "output": {
+            "type": "hotel_folio",
+            "attachment_name": null,
+            "city": "Beijing",
+            "checkin_date": "2024-08-27",
+            "checkout_date": "2024-08-28",
+            "currency": "CNY",
+            "amount": 663.45,
+            "invoice_line_id": "3801"
+          }
+        }
+      ],
+      "end_time": "2025-11-07T07:59:28.861703Z",
+      "elapsed_seconds": 26.330644369125366
+    }
+  ],
+  "task_end": "2025-11-07T07:59:28.861710Z",
+  "task_elapsed_seconds": 419.9853980541229
+}
