@@ -1,16 +1,10 @@
-# ============================================================
-# 票据分类器 - 极速精简版
-# RapidOCR（最快） + Qwen LLM 分类
-# 统计每张图片 OCR 用时 + LLM 用时
-# ============================================================
-
 from pathlib import Path
 from rapidocr_onnxruntime import RapidOCR
 from openai import OpenAI
 import time
 
-# ==== 配置 ====
-API_KEY = "sk-88551cce573d49fe81aa466d78c21741"
+
+API_KEY = "OPENAI_API_KEY"
 BASE_URL = "https://dashscope.aliyuncs.com/compatible-mode/v1"
 MODEL_NAME = "qwen2.5-7b-instruct"
 
@@ -23,9 +17,7 @@ ocr = RapidOCR()
 client = OpenAI(api_key=API_KEY, base_url=BASE_URL)
 
 
-# ============================================================
-# OCR
-# ============================================================
+
 def run_ocr(path):
     start = time.time()
     result, _ = ocr(path)
@@ -39,9 +31,7 @@ def run_ocr(path):
     return text, elapsed
 
 
-# ============================================================
-# LLM 分类
-# ============================================================
+
 def classify_llm(text: str):
     if len(text.strip()) < 5:
         return "other", 0
@@ -82,9 +72,7 @@ OCR 文本：
     return "other", elapsed
 
 
-# ============================================================
-# 主函数：对单张图片进行处理
-# ============================================================
+
 def classify_image(image_path):
     print(f"\n📄 文件: {Path(image_path).name}")
 
@@ -99,9 +87,6 @@ def classify_image(image_path):
     return category
 
 
-# ============================================================
-# 批量处理
-# ============================================================
 def main():
     if not INPUT_DIR.exists():
         print(f"目录不存在: {INPUT_DIR}")
