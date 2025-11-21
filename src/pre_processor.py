@@ -5,11 +5,44 @@ import fitz  # PyMuPDF
 from PIL import Image
 
 
+
+def preprocess_file(input_path: Path, output_dir: Path) -> Path:
+    """
+    Process a single input file (PDF / JPG / PNG) and output a JPG file.
+    Returns the output JPG path.
+    """
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    suffix = input_path.suffix.lower()
+
+    # ---- PDF ----
+    if suffix == ".pdf":
+        # Always convert only page 1 for processing
+        doc = fitz.open(input_path)
+        if len(doc) == 0:
+            raise ValueError(f"PDF has no pages: {input_path}")
+
+        page = doc[0]
+        pix = page.get_pixmap(matrix=fitz.Matrix(2, 2))
+        out_path = output_dir / f"{input_path.stem}_page1.jpg"
+        pix.save(out_path)
+        doc.close()
+        return out_path
+
+    # ---- Image (jpg/png) ----
+    elif suffix in [".jpg", ".jpeg", ".png"]:
+        img = Image.open(input_path).convert("RGB")
+        out_path = output_dir / f"{input_path.stem}.jpg"
+        img.save(out_path, "JPEG", quality=95)
+        return out_path
+
+    else:
+        raise ValueError(f"Unsupported file type: {input_path}")
+
+
+
 class PreProcessor:
-    """
-    Convert all input files (PDF / JPG / PNG) into unified JPG images.
-    Produces clean, standardized images for classifier + extractor.
-    """
+    """Batch processing class."""
 
     def __init__(self, input_dir: str, output_dir: str = "data/processed"):
         self.input_dir = Path(input_dir)
@@ -17,55 +50,14 @@ class PreProcessor:
         self.output_dir.mkdir(parents=True, exist_ok=True)
 
     def run(self) -> List[Path]:
-        """
-        Process all files in input_dir and return list of processed JPG paths.
-        """
         processed_paths = []
 
         for file in self.input_dir.iterdir():
-            if file.suffix.lower() in [".pdf"]:
-                processed_paths.extend(self._process_pdf(file))
-
-            elif file.suffix.lower() in [".jpg", ".jpeg", ".png"]:
-                processed_paths.append(self._process_image(file))
-
-            else:
-                print(f"[WARNING] Unsupported file type: {file}")
+            try:
+                processed_paths.append(
+                    preprocess_file(file, self.output_dir)
+                )
+            except Exception as e:
+                print(f"[WARNING] Cannot process {file}: {e}")
 
         return processed_paths
-
-
-    def _process_pdf(self, pdf_path: Path) -> List[Path]:
-        """
-        Convert each page of a PDF into a JPG image.
-        """
-        doc = fitz.open(pdf_path)
-        output_paths = []
-
-        for i, page in enumerate(doc):
-            pix = page.get_pixmap(matrix=fitz.Matrix(2, 2))  # 2x for clarity
-            output_path = self.output_dir / f"{pdf_path.stem}_page{i+1}.jpg"
-            pix.save(output_path)
-            output_paths.append(output_path)
-
-        doc.close()
-        return output_paths
-
-
-    def _process_image(self, img_path: Path) -> Path:
-        """
-        Convert an image into JPG (even if already JPG, re-save for consistency).
-        """
-        img = Image.open(img_path).convert("RGB")
-        output_path = self.output_dir / f"{img_path.stem}.jpg"
-        img.save(output_path, "JPEG", quality=95)
-        return output_path
-
-
-
-if __name__ == "__main__":
-    processor = PreProcessor(input_dir="data/raw", output_dir="data/processed")
-    results = processor.run()
-    print("\nProcessed files:")
-    for r in results:
-        print(" →", r)
