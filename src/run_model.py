@@ -41,7 +41,8 @@ async def run_one_file(image_path: Path, prompt_path: Path) -> dict:
                 ],
             }
         ],
-        "max_tokens": 4000
+        "max_tokens": 4000,
+        "temperature": 0
     }
 
     headers = {

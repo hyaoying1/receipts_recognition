@@ -4,8 +4,6 @@ from concurrent.futures import ThreadPoolExecutor
 from difflib import SequenceMatcher
 from rapidocr_onnxruntime import RapidOCR
 
-
-
 ocr = RapidOCR(
     lang="ch",
     providers=["CUDAExecutionProvider", "CPUExecutionProvider"]
@@ -21,7 +19,6 @@ def run_ocr(path: Path) -> str:
     return ""
 
 
-
 async def run_ocr_async(path: Path) -> str:
     loop = asyncio.get_event_loop()
     return await loop.run_in_executor(ocr_executor, run_ocr, path)
@@ -29,7 +26,6 @@ async def run_ocr_async(path: Path) -> str:
 
 
 def fuzzy_contains(text: str, keyword: str, threshold: float = 0.75) -> bool:
-    text = text.lower()
     keyword = keyword.lower()
 
     # exact match
@@ -99,7 +95,6 @@ async def classification_one(image_path: Path) -> dict:
     text = await run_ocr_async(image_path)
     doc_type = await rule_classify(text)
     return {"file": str(image_path), "type": doc_type}
-
 
 
 async def classification_batch(image_paths: list[Path]) -> list[dict]:
