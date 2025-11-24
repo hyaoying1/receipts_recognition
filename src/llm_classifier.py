@@ -18,16 +18,17 @@ ocr = RapidOCR()
 ocr_executor = ThreadPoolExecutor(max_workers=8)
 
 
-def run_ocr_sync(path: Path) -> str:
+def run_ocr(path: Path) -> str:
     result, _ = ocr(str(path))
     if result:
         return "\n".join([line[1] for line in result])
     return ""
 
-
+# wrap the synchronous inside a thread
+# returun oct result asynchronously
 async def run_ocr_async(path: Path) -> str:
     loop = asyncio.get_event_loop()
-    return await loop.run_in_executor(ocr_executor, run_ocr_sync, path)
+    return await loop.run_in_executor(ocr_executor, run_ocr, path)
 
 
 async def classify_llm_async(text: str) -> str:
@@ -84,7 +85,7 @@ OCR 文本：
     return "other"
 
 
-async def classify_file_async(image_path: Path) -> dict:
+async def classification(image_path: Path) -> dict:
     print(f"\n📄 分类文件: {image_path.name}")
 
     text = await run_ocr_async(image_path)

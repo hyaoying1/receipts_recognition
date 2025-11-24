@@ -1,5 +1,6 @@
 import os
 import base64
+import json
 import asyncio
 from pathlib import Path
 import httpx
@@ -9,8 +10,7 @@ BASE_URL = "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions"
 API_KEY_ENV = "OPENAI_API_KEY"
 MODEL_NAME = "qwen3-vl-8b-instruct"
 
-# limit concurrency to 3 for image extraction
-SEM_EXTRACT = asyncio.Semaphore(3)
+SEM_EXTRACT = asyncio.Semaphore(5)
 
 
 def make_data_url_sync(path: Path):
@@ -26,9 +26,8 @@ async def make_data_url(path: Path):
 
 
 async def run_one_file(image_path: Path, prompt_path: Path) -> dict:
-    prompt = Path(prompt_path).read_text(encoding="utf-8")
     api_key = os.getenv(API_KEY_ENV)
-
+    prompt = Path(prompt_path).read_text(encoding="utf-8")
     data_url = await make_data_url(image_path)
 
     payload = {
@@ -42,7 +41,7 @@ async def run_one_file(image_path: Path, prompt_path: Path) -> dict:
                 ],
             }
         ],
-        "max_tokens": 200,
+        "max_tokens": 4000
     }
 
     headers = {
@@ -50,14 +49,30 @@ async def run_one_file(image_path: Path, prompt_path: Path) -> dict:
         "Content-Type": "application/json",
     }
 
-    async with SEM_EXTRACT:  # limit concurrency
+    async with SEM_EXTRACT:
         for attempt in range(3):
             try:
-                async with httpx.AsyncClient(timeout=30.0) as client:
+                async with httpx.AsyncClient(timeout=40) as client:
                     resp = await client.post(BASE_URL, json=payload, headers=headers)
                     resp.raise_for_status()
-                    content = resp.json()["choices"][0]["message"]["content"]
-                    return {"file": str(image_path), "output": content}
+
+                raw = resp.json()["choices"][0]["message"]["content"]
+
+                if isinstance(raw, list):
+                    # flatten list content
+                    text = ""
+                    for c in raw:
+                        if isinstance(c, dict) and "text" in c:
+                            text += c["text"]
+                    raw = text
+
+                raw = str(raw).strip()
+
+                return {
+                    "file": str(image_path),
+                    "output": raw
+                }
+
             except Exception as e:
                 if attempt == 2:
                     return {"file": str(image_path), "error": str(e)}
