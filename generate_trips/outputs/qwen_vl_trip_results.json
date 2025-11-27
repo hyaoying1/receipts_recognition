@@ -1,0 +1,1496 @@
+{
+  "task_start": "2025-11-19T08:28:30.433904Z",
+  "root_dir": "./pictures/行程单",
+  "models": [
+    {
+      "model": "qwen-vl-plus",
+      "start_time": "2025-11-19T08:28:30.434149Z",
+      "cases": [
+        {
+          "_file": "pictures/行程单/携程用车行程单_page_01.jpg",
+          "output_raw": "```json\n{\n  \"type\": \"行程单\",\n  \"vendor\": \"携程用车\",\n  \"apply_date\": \"2025-08-25\",\n  \"start_date\": \"2025-08-22\",\n  \"end_date\": \"2025-08-22\",\n  \"trips\": [\n    {\n      \"city\": \"北京\",\n      \"date\": \"2025-08-22\",\n      \"start_time\": \"2025-08-22 13:55:00\",\n      \"line_amount\": 103.00,\n      \"currency\": \"CNY\"\n    }\n  ],\n  \"total_amount\": 103.00\n}\n```",
+          "output": {
+            "type": "行程单",
+            "vendor": "携程用车",
+            "apply_date": "2025-08-25",
+            "start_date": "2025-08-22",
+            "end_date": "2025-08-22",
+            "trips": [
+              {
+                "city": "北京",
+                "date": "2025-08-22",
+                "start_time": "2025-08-22 13:55:00",
+                "line_amount": 103.0,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 103.0
+          },
+          "parse_error": null,
+          "elapsed_seconds": 5.428329944610596
+        },
+        {
+          "_file": "pictures/行程单/曹操出行电子行程单-2条乘车记录_page_01.jpg",
+          "output_raw": "```json\n{\n  \"type\": \"行程单\",\n  \"vendor\": \"CAOCAO ITINERARY\",\n  \"apply_date\": \"2023-01-18\",\n  \"start_date\": \"2023-01-13\",\n  \"end_date\": \"2023-01-13\",\n  \"trips\": [\n    {\n      \"city\": \"福州\",\n      \"date\": \"2023-01-13\",\n      \"start_time\": \"2023-01-13 14:10:00\",\n      \"line_amount\": 39.72,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"福州\",\n      \"date\": \"2023-01-13\",\n      \"start_time\": null,\n      \"line_amount\": 43.43,\n      \"currency\": \"CNY\"\n    }\n  ],\n  \"total_amount\": 39.72\n}\n```",
+          "output": {
+            "type": "行程单",
+            "vendor": "CAOCAO ITINERARY",
+            "apply_date": "2023-01-18",
+            "start_date": "2023-01-13",
+            "end_date": "2023-01-13",
+            "trips": [
+              {
+                "city": "福州",
+                "date": "2023-01-13",
+                "start_time": "2023-01-13 14:10:00",
+                "line_amount": 39.72,
+                "currency": "CNY"
+              },
+              {
+                "city": "福州",
+                "date": "2023-01-13",
+                "start_time": null,
+                "line_amount": 43.43,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 39.72
+          },
+          "parse_error": null,
+          "elapsed_seconds": 4.183783054351807
+        },
+        {
+          "_file": "pictures/行程单/滴滴出行行程报销单-7条乘车记录_page_01.jpg",
+          "output_raw": "```json\n{\n  \"type\": \"行程单\",\n  \"vendor\": \"DIDI TRAVEL\",\n  \"apply_date\": \"2024-01-19\",\n  \"start_date\": \"2024-12-28\",\n  \"end_date\": \"2024-01-16\",\n  \"trips\": [\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-12-28\",\n      \"start_time\": \"2024-12-28 23:52:00\",\n      \"line_amount\": 13.82,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-09\",\n      \"start_time\": \"2024-01-09 09:09:00\",\n      \"line_amount\": 13.02,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-10\",\n      \"start_time\": \"2024-01-10 20:19:00\",\n      \"line_amount\": 13.92,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-11\",\n      \"start_time\": \"2024-01-11 19:57:00\",\n      \"line_amount\": 13.92,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-12\",\n      \"start_time\": \"2024-01-12 15:55:00\",\n      \"line_amount\": 14.44,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-15\",\n      \"start_time\": \"2024-01-15 17:50:00\",\n      \"line_amount\": 14.00,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-16\",\n      \"start_time\": \"2024-01-16 10:44:00\",\n      \"line_amount\": 12.81,\n      \"currency\": \"CNY\"\n    }\n  ],\n  \"total_amount\": 96.89\n}\n```",
+          "output": {
+            "type": "行程单",
+            "vendor": "DIDI TRAVEL",
+            "apply_date": "2024-01-19",
+            "start_date": "2024-12-28",
+            "end_date": "2024-01-16",
+            "trips": [
+              {
+                "city": "厦门市",
+                "date": "2024-12-28",
+                "start_time": "2024-12-28 23:52:00",
+                "line_amount": 13.82,
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-01-09",
+                "start_time": "2024-01-09 09:09:00",
+                "line_amount": 13.02,
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-01-10",
+                "start_time": "2024-01-10 20:19:00",
+                "line_amount": 13.92,
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-01-11",
+                "start_time": "2024-01-11 19:57:00",
+                "line_amount": 13.92,
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-01-12",
+                "start_time": "2024-01-12 15:55:00",
+                "line_amount": 14.44,
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-01-15",
+                "start_time": "2024-01-15 17:50:00",
+                "line_amount": 14.0,
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-01-16",
+                "start_time": "2024-01-16 10:44:00",
+                "line_amount": 12.81,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 96.89
+          },
+          "parse_error": null,
+          "elapsed_seconds": 10.725820302963257
+        },
+        {
+          "_file": "pictures/行程单/百度地图打车-yyyymmdd_page_01.jpg",
+          "output_raw": "```json\n{\n  \"type\": \"行程单\",\n  \"vendor\": \"百度地图\",\n  \"apply_date\": \"2025-09-05\",\n  \"start_date\": \"2025-09-04\",\n  \"end_date\": \"2025-09-04\",\n  \"trips\": [\n    {\n      \"city\": \"北京\",\n      \"date\": \"2025-09-04\",\n      \"start_time\": \"2025-09-04 16:00:45\",\n      \"line_amount\": 29.31,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"北京\",\n      \"date\": \"2025-09-04\",\n      \"start_time\": \"2025-09-04 08:09:10\",\n      \"line_amount\": 24.61,\n      \"currency\": \"CNY\"\n    }\n  ],\n  \"total_amount\": 53.92\n}\n```",
+          "output": {
+            "type": "行程单",
+            "vendor": "百度地图",
+            "apply_date": "2025-09-05",
+            "start_date": "2025-09-04",
+            "end_date": "2025-09-04",
+            "trips": [
+              {
+                "city": "北京",
+                "date": "2025-09-04",
+                "start_time": "2025-09-04 16:00:45",
+                "line_amount": 29.31,
+                "currency": "CNY"
+              },
+              {
+                "city": "北京",
+                "date": "2025-09-04",
+                "start_time": "2025-09-04 08:09:10",
+                "line_amount": 24.61,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 53.92
+          },
+          "parse_error": null,
+          "elapsed_seconds": 4.59416389465332
+        },
+        {
+          "_file": "pictures/行程单/花小猪打车行程单-2条乘车记录_page_01.jpg",
+          "output_raw": "```json\n{\n  \"type\": \"行程单\",\n  \"vendor\": \"花小猪打车\",\n  \"apply_date\": \"2024-03-04\",\n  \"start_date\": \"2024-01-21\",\n  \"end_date\": \"2024-02-08\",\n  \"trips\": [\n    {\n      \"city\": \"福州市\",\n      \"date\": \"2024-01-21\",\n      \"start_time\": \"2024-01-21 20:12:00\",\n      \"line_amount\": 15.58,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"福州市\",\n      \"date\": \"2024-02-08\",\n      \"start_time\": \"2024-02-08 17:33:00\",\n      \"line_amount\": 46.60,\n      \"currency\": \"CNY\"\n    }\n  ],\n  \"total_amount\": 121.32\n}\n```",
+          "output": {
+            "type": "行程单",
+            "vendor": "花小猪打车",
+            "apply_date": "2024-03-04",
+            "start_date": "2024-01-21",
+            "end_date": "2024-02-08",
+            "trips": [
+              {
+                "city": "福州市",
+                "date": "2024-01-21",
+                "start_time": "2024-01-21 20:12:00",
+                "line_amount": 15.58,
+                "currency": "CNY"
+              },
+              {
+                "city": "福州市",
+                "date": "2024-02-08",
+                "start_time": "2024-02-08 17:33:00",
+                "line_amount": 46.6,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 121.32
+          },
+          "parse_error": null,
+          "elapsed_seconds": 5.7353551387786865
+        }
+      ],
+      "end_time": "2025-11-19T08:29:01.102136Z",
+      "elapsed_seconds": 30.66800308227539
+    },
+    {
+      "model": "qwen-vl-max",
+      "start_time": "2025-11-19T08:29:01.102162Z",
+      "cases": [
+        {
+          "_file": "pictures/行程单/携程用车行程单_page_01.jpg",
+          "output_raw": "{\n  \"type\": \"行程单\",\n  \"vendor\": \"携程\",\n  \"apply_date\": \"2025-08-25\",\n  \"start_date\": \"2025-08-22\",\n  \"end_date\": \"2025-08-22\",\n  \"trips\": [\n    {\n      \"city\": \"北京\",\n      \"date\": \"2025-08-22\",\n      \"start_time\": \"2025-08-22 13:55:00\",\n      \"line_amount\": 103.00,\n      \"currency\": \"CNY\"\n    }\n  ],\n  \"total_amount\": 103.00\n}",
+          "output": {
+            "type": "行程单",
+            "vendor": "携程",
+            "apply_date": "2025-08-25",
+            "start_date": "2025-08-22",
+            "end_date": "2025-08-22",
+            "trips": [
+              {
+                "city": "北京",
+                "date": "2025-08-22",
+                "start_time": "2025-08-22 13:55:00",
+                "line_amount": 103.0,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 103.0
+          },
+          "parse_error": null,
+          "elapsed_seconds": 13.882781028747559
+        },
+        {
+          "_file": "pictures/行程单/曹操出行电子行程单-2条乘车记录_page_01.jpg",
+          "output_raw": "{\n  \"type\": \"行程单\",\n  \"vendor\": \"曹操出行\",\n  \"apply_date\": \"2023-01-18\",\n  \"start_date\": \"2023-01-13\",\n  \"end_date\": \"2023-01-13\",\n  \"trips\": [\n    {\n      \"city\": \"福州\",\n      \"date\": \"2023-01-13\",\n      \"start_time\": \"2023-01-13 14:10:00\",\n      \"line_amount\": 39.72,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"福州\",\n      \"date\": \"2023-01-13\",\n      \"start_time\": \"2023-01-13 12:58:00\",\n      \"line_amount\": 43.43,\n      \"currency\": \"CNY\"\n    }\n  ],\n  \"total_amount\": 83.15\n}",
+          "output": {
+            "type": "行程单",
+            "vendor": "曹操出行",
+            "apply_date": "2023-01-18",
+            "start_date": "2023-01-13",
+            "end_date": "2023-01-13",
+            "trips": [
+              {
+                "city": "福州",
+                "date": "2023-01-13",
+                "start_time": "2023-01-13 14:10:00",
+                "line_amount": 39.72,
+                "currency": "CNY"
+              },
+              {
+                "city": "福州",
+                "date": "2023-01-13",
+                "start_time": "2023-01-13 12:58:00",
+                "line_amount": 43.43,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 83.15
+          },
+          "parse_error": null,
+          "elapsed_seconds": 7.523787021636963
+        },
+        {
+          "_file": "pictures/行程单/滴滴出行行程报销单-7条乘车记录_page_01.jpg",
+          "output_raw": "{\n  \"type\": \"行程单\",\n  \"vendor\": \"滴滴出行\",\n  \"apply_date\": \"2024-01-19\",\n  \"start_date\": \"2023-12-28\",\n  \"end_date\": \"2024-01-16\",\n  \"trips\": [\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2023-12-28\",\n      \"start_time\": \"2023-12-28 23:12:00\",\n      \"line_amount\": 14.86,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-09\",\n      \"start_time\": \"2024-01-09 20:09:00\",\n      \"line_amount\": 13.02,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-10\",\n      \"start_time\": \"2024-01-10 20:19:00\",\n      \"line_amount\": 13.92,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-11\",\n      \"start_time\": \"2024-01-11 19:57:00\",\n      \"line_amount\": 13.92,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-12\",\n      \"start_time\": \"2024-01-12 20:31:00\",\n      \"line_amount\": 14.44,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-15\",\n      \"start_time\": \"2024-01-15 20:44:00\",\n      \"line_amount\": 13.92,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-16\",\n      \"start_time\": \"2024-01-16 17:50:00\",\n      \"line_amount\": 12.81,\n      \"currency\": \"CNY\"\n    }\n  ],\n  \"total_amount\": 96.89\n}",
+          "output": {
+            "type": "行程单",
+            "vendor": "滴滴出行",
+            "apply_date": "2024-01-19",
+            "start_date": "2023-12-28",
+            "end_date": "2024-01-16",
+            "trips": [
+              {
+                "city": "厦门市",
+                "date": "2023-12-28",
+                "start_time": "2023-12-28 23:12:00",
+                "line_amount": 14.86,
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-01-09",
+                "start_time": "2024-01-09 20:09:00",
+                "line_amount": 13.02,
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-01-10",
+                "start_time": "2024-01-10 20:19:00",
+                "line_amount": 13.92,
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-01-11",
+                "start_time": "2024-01-11 19:57:00",
+                "line_amount": 13.92,
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-01-12",
+                "start_time": "2024-01-12 20:31:00",
+                "line_amount": 14.44,
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-01-15",
+                "start_time": "2024-01-15 20:44:00",
+                "line_amount": 13.92,
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-01-16",
+                "start_time": "2024-01-16 17:50:00",
+                "line_amount": 12.81,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 96.89
+          },
+          "parse_error": null,
+          "elapsed_seconds": 17.089667081832886
+        },
+        {
+          "_file": "pictures/行程单/百度地图打车-yyyymmdd_page_01.jpg",
+          "output_raw": "{\n  \"type\": \"行程单\",\n  \"vendor\": \"百度地图\",\n  \"apply_date\": \"2025-09-05\",\n  \"start_date\": \"2025-09-04\",\n  \"end_date\": \"2025-09-04\",\n  \"trips\": [\n    {\n      \"city\": \"北京\",\n      \"date\": \"2025-09-04\",\n      \"start_time\": \"2025-09-04 16:00:45\",\n      \"line_amount\": 29.31,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"北京\",\n      \"date\": \"2025-09-04\",\n      \"start_time\": \"2025-09-04 08:09:10\",\n      \"line_amount\": 24.61,\n      \"currency\": \"CNY\"\n    }\n  ],\n  \"total_amount\": 53.92\n}",
+          "output": {
+            "type": "行程单",
+            "vendor": "百度地图",
+            "apply_date": "2025-09-05",
+            "start_date": "2025-09-04",
+            "end_date": "2025-09-04",
+            "trips": [
+              {
+                "city": "北京",
+                "date": "2025-09-04",
+                "start_time": "2025-09-04 16:00:45",
+                "line_amount": 29.31,
+                "currency": "CNY"
+              },
+              {
+                "city": "北京",
+                "date": "2025-09-04",
+                "start_time": "2025-09-04 08:09:10",
+                "line_amount": 24.61,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 53.92
+          },
+          "parse_error": null,
+          "elapsed_seconds": 7.996349096298218
+        },
+        {
+          "_file": "pictures/行程单/花小猪打车行程单-2条乘车记录_page_01.jpg",
+          "output_raw": "{\n  \"type\": \"行程单\",\n  \"vendor\": \"花小猪打车\",\n  \"apply_date\": \"2024-03-04\",\n  \"start_date\": \"2024-01-21\",\n  \"end_date\": \"2024-02-08\",\n  \"trips\": [\n    {\n      \"city\": \"福州市\",\n      \"date\": \"2024-01-21\",\n      \"start_time\": \"2024-01-21 20:13:00\",\n      \"line_amount\": 31.4,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"福州市\",\n      \"date\": \"2024-02-08\",\n      \"start_time\": \"2024-02-08 17:32:00\",\n      \"line_amount\": 89.92,\n      \"currency\": \"CNY\"\n    }\n  ],\n  \"total_amount\": 121.32\n}",
+          "output": {
+            "type": "行程单",
+            "vendor": "花小猪打车",
+            "apply_date": "2024-03-04",
+            "start_date": "2024-01-21",
+            "end_date": "2024-02-08",
+            "trips": [
+              {
+                "city": "福州市",
+                "date": "2024-01-21",
+                "start_time": "2024-01-21 20:13:00",
+                "line_amount": 31.4,
+                "currency": "CNY"
+              },
+              {
+                "city": "福州市",
+                "date": "2024-02-08",
+                "start_time": "2024-02-08 17:32:00",
+                "line_amount": 89.92,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 121.32
+          },
+          "parse_error": null,
+          "elapsed_seconds": 7.596174001693726
+        }
+      ],
+      "end_time": "2025-11-19T08:29:55.191391Z",
+      "elapsed_seconds": 54.089247941970825
+    },
+    {
+      "model": "qwen2.5-vl-3b-instruct",
+      "start_time": "2025-11-19T08:29:55.191425Z",
+      "cases": [
+        {
+          "_file": "pictures/行程单/携程用车行程单_page_01.jpg",
+          "output_raw": "```json\n{\n  \"type\": \"行程单\",\n  \"vendor\": \"CTrip\",\n  \"apply_date\": \"2025-08-25\",\n  \"start_date\": \"2025-08-22\",\n  \"end_date\": \"2025-08-22\",\n  \"trips\": [\n    {\n      \"city\": \"北京\",\n      \"date\": \"2025-08-22\",\n      \"start_time\": \"2025-08-22 13:55:00\",\n      \"line_amount\": \"103.00\",\n      \"currency\": \"CNY\"\n    }\n  ],\n  \"total_amount\": \"103.00\"\n}\n```",
+          "output": {
+            "type": "行程单",
+            "vendor": "CTrip",
+            "apply_date": "2025-08-25",
+            "start_date": "2025-08-22",
+            "end_date": "2025-08-22",
+            "trips": [
+              {
+                "city": "北京",
+                "date": "2025-08-22",
+                "start_time": "2025-08-22 13:55:00",
+                "line_amount": "103.00",
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": "103.00"
+          },
+          "parse_error": null,
+          "elapsed_seconds": 3.045560121536255
+        },
+        {
+          "_file": "pictures/行程单/曹操出行电子行程单-2条乘车记录_page_01.jpg",
+          "output_raw": "```json\n{\n  \"type\": \"行程单\",\n  \"vendor\": \"CAOCAO ITINERARY\",\n  \"apply_date\": \"2023-01-18\",\n  \"start_date\": \"2023-01-13\",\n  \"end_date\": \"2023-01-13\",\n  \"trips\": [\n    {\n      \"city\": \"福州\",\n      \"date\": \"2023-01-13\",\n      \"start_time\": \"2023-01-13 14:10\",\n      \"line_amount\": \"39.72\",\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"福州\",\n      \"date\": \"2023-01-13\",\n      \"start_time\": \"2023-01-13 12:58\",\n      \"line_amount\": \"43.43\",\n      \"currency\": \"CNY\"\n    }\n  ],\n  \"total_amount\": \"83.15\"\n}\n```",
+          "output": {
+            "type": "行程单",
+            "vendor": "CAOCAO ITINERARY",
+            "apply_date": "2023-01-18",
+            "start_date": "2023-01-13",
+            "end_date": "2023-01-13",
+            "trips": [
+              {
+                "city": "福州",
+                "date": "2023-01-13",
+                "start_time": "2023-01-13 14:10",
+                "line_amount": "39.72",
+                "currency": "CNY"
+              },
+              {
+                "city": "福州",
+                "date": "2023-01-13",
+                "start_time": "2023-01-13 12:58",
+                "line_amount": "43.43",
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": "83.15"
+          },
+          "parse_error": null,
+          "elapsed_seconds": 4.728003025054932
+        },
+        {
+          "_file": "pictures/行程单/滴滴出行行程报销单-7条乘车记录_page_01.jpg",
+          "output_raw": "```json\n{\n  \"type\": \"行程单\",\n  \"vendor\": \"滴滴出行\",\n  \"apply_date\": \"2024-01-19\",\n  \"start_date\": \"2023-12-28\",\n  \"end_date\": \"2024-01-16\",\n  \"trips\": [\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2023-12-28\",\n      \"start_time\": \"2023-12-28 23:50:00\",\n      \"line_amount\": \"14.86\",\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2023-12-28\",\n      \"start_time\": \"2023-12-28 23:50:00\",\n      \"line_amount\": \"14.86\",\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2023-12-28\",\n      \"start_time\": \"2023-12-28 23:50:00\",\n      \"line_amount\": \"14.86\",\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2023-12-28\",\n      \"start_time\": \"2023-12-28 23:50:00\",\n      \"line_amount\": \"14.86\",\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2023-12-28\",\n      \"start_time\": \"2023-12-28 23:50:00\",\n      \"line_amount\": \"14.86\",\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2023-12-28\",\n      \"start_time\": \"2023-12-28 23:50:00\",\n      \"line_amount\": \"14.86\",\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2023-12-28\",\n      \"start_time\": \"2023-12-28 23:50:00\",\n      \"line_amount\": \"14.86\",\n      \"currency\": \"CNY\"\n    }\n  ],\n  \"total_amount\": \"96.89\"\n}\n```",
+          "output": {
+            "type": "行程单",
+            "vendor": "滴滴出行",
+            "apply_date": "2024-01-19",
+            "start_date": "2023-12-28",
+            "end_date": "2024-01-16",
+            "trips": [
+              {
+                "city": "厦门市",
+                "date": "2023-12-28",
+                "start_time": "2023-12-28 23:50:00",
+                "line_amount": "14.86",
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2023-12-28",
+                "start_time": "2023-12-28 23:50:00",
+                "line_amount": "14.86",
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2023-12-28",
+                "start_time": "2023-12-28 23:50:00",
+                "line_amount": "14.86",
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2023-12-28",
+                "start_time": "2023-12-28 23:50:00",
+                "line_amount": "14.86",
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2023-12-28",
+                "start_time": "2023-12-28 23:50:00",
+                "line_amount": "14.86",
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2023-12-28",
+                "start_time": "2023-12-28 23:50:00",
+                "line_amount": "14.86",
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2023-12-28",
+                "start_time": "2023-12-28 23:50:00",
+                "line_amount": "14.86",
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": "96.89"
+          },
+          "parse_error": null,
+          "elapsed_seconds": 9.047396183013916
+        },
+        {
+          "_file": "pictures/行程单/百度地图打车-yyyymmdd_page_01.jpg",
+          "output_raw": "```json\n{\n  \"type\": \"行程单\",\n  \"vendor\": null,\n  \"apply_date\": \"2025-09-05\",\n  \"start_date\": \"2025-09-04\",\n  \"end_date\": \"2025-09-04\",\n  \"trips\": [\n    {\n      \"city\": \"北京\",\n      \"date\": \"2025-09-04\",\n      \"start_time\": \"2025-09-04 16:00:45\",\n      \"line_amount\": \"29.31\",\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"北京\",\n      \"date\": \"2025-09-04\",\n      \"start_time\": \"2025-09-04 08:09:10\",\n      \"line_amount\": \"24.61\",\n      \"currency\": \"CNY\"\n    }\n  ],\n  \"total_amount\": \"53.92\"\n}\n```",
+          "output": {
+            "type": "行程单",
+            "vendor": null,
+            "apply_date": "2025-09-05",
+            "start_date": "2025-09-04",
+            "end_date": "2025-09-04",
+            "trips": [
+              {
+                "city": "北京",
+                "date": "2025-09-04",
+                "start_time": "2025-09-04 16:00:45",
+                "line_amount": "29.31",
+                "currency": "CNY"
+              },
+              {
+                "city": "北京",
+                "date": "2025-09-04",
+                "start_time": "2025-09-04 08:09:10",
+                "line_amount": "24.61",
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": "53.92"
+          },
+          "parse_error": null,
+          "elapsed_seconds": 4.571678876876831
+        },
+        {
+          "_file": "pictures/行程单/花小猪打车行程单-2条乘车记录_page_01.jpg",
+          "output_raw": "```json\n{\n  \"type\": \"行程单\",\n  \"vendor\": \"花小猪打车\",\n  \"apply_date\": \"2024-03-04\",\n  \"start_date\": \"2024-01-21\",\n  \"end_date\": \"2024-02-08\",\n  \"trips\": [\n    {\n      \"city\": \"福州市\",\n      \"date\": \"2024-01-21\",\n      \"start_time\": \"2024-01-21 20:13:00\",\n      \"line_amount\": \"31.40\",\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"福州市\",\n      \"date\": \"2024-02-08\",\n      \"start_time\": \"2024-02-08 17:32:00\",\n      \"line_amount\": \"89.92\",\n      \"currency\": \"CNY\"\n    }\n  ],\n  \"total_amount\": \"121.32\"\n}\n```",
+          "output": {
+            "type": "行程单",
+            "vendor": "花小猪打车",
+            "apply_date": "2024-03-04",
+            "start_date": "2024-01-21",
+            "end_date": "2024-02-08",
+            "trips": [
+              {
+                "city": "福州市",
+                "date": "2024-01-21",
+                "start_time": "2024-01-21 20:13:00",
+                "line_amount": "31.40",
+                "currency": "CNY"
+              },
+              {
+                "city": "福州市",
+                "date": "2024-02-08",
+                "start_time": "2024-02-08 17:32:00",
+                "line_amount": "89.92",
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": "121.32"
+          },
+          "parse_error": null,
+          "elapsed_seconds": 3.9809279441833496
+        }
+      ],
+      "end_time": "2025-11-19T08:30:20.565661Z",
+      "elapsed_seconds": 25.374249935150146
+    },
+    {
+      "model": "qwen2.5-vl-7b-instruct",
+      "start_time": "2025-11-19T08:30:20.565710Z",
+      "cases": [
+        {
+          "_file": "pictures/行程单/携程用车行程单_page_01.jpg",
+          "output_raw": "```json\n{\n  \"type\": \"行程单\",\n  \"vendor\": \"携程用车行\",\n  \"apply_date\": \"2025-08-25\",\n  \"start_date\": \"2025-08-22\",\n  \"end_date\": \"2025-08-22\",\n  \"trips\": [\n    {\n      \"city\": \"北京\",\n      \"date\": \"2025-08-22\",\n      \"start_time\": \"2025-08-22 13:55:00\",\n      \"line_amount\": \"103.00\",\n      \"currency\": \"CNY\"\n    }\n  ],\n  \"total_amount\": \"103.00\"\n}\n```",
+          "output": {
+            "type": "行程单",
+            "vendor": "携程用车行",
+            "apply_date": "2025-08-25",
+            "start_date": "2025-08-22",
+            "end_date": "2025-08-22",
+            "trips": [
+              {
+                "city": "北京",
+                "date": "2025-08-22",
+                "start_time": "2025-08-22 13:55:00",
+                "line_amount": "103.00",
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": "103.00"
+          },
+          "parse_error": null,
+          "elapsed_seconds": 13.589905977249146
+        },
+        {
+          "_file": "pictures/行程单/曹操出行电子行程单-2条乘车记录_page_01.jpg",
+          "output_raw": "```json\n{\n  \"type\": \"行程单\",\n  \"vendor\": \"曹操出行 CAOCACAO ITINERARY\",\n  \"apply_date\": \"2023-01-18\",\n  \"start_date\": \"2023-01-13\",\n  \"end_date\": \"2023-01-13\",\n  \"trips\": [\n    {\n      \"city\": \"福州\",\n      \"date\": \"2023-01-13\",\n      \"start_time\": \"2023-01-13 14:10:00\",\n      \"line_amount\": 39.72,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"福州\",\n      \"date\": \"2023-01-13\",\n      \"start_time\": \"2023-01-13 12:58:00\",\n      \"line_amount\": 43.43,\n      \"currency\": \"CNY\"\n    }\n  ],\n  \"total_amount\": 83.15\n}\n```",
+          "output": {
+            "type": "行程单",
+            "vendor": "曹操出行 CAOCACAO ITINERARY",
+            "apply_date": "2023-01-18",
+            "start_date": "2023-01-13",
+            "end_date": "2023-01-13",
+            "trips": [
+              {
+                "city": "福州",
+                "date": "2023-01-13",
+                "start_time": "2023-01-13 14:10:00",
+                "line_amount": 39.72,
+                "currency": "CNY"
+              },
+              {
+                "city": "福州",
+                "date": "2023-01-13",
+                "start_time": "2023-01-13 12:58:00",
+                "line_amount": 43.43,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 83.15
+          },
+          "parse_error": null,
+          "elapsed_seconds": 11.80075216293335
+        },
+        {
+          "_file": "pictures/行程单/滴滴出行行程报销单-7条乘车记录_page_01.jpg",
+          "output_raw": "```json\n{\n  \"type\": \"行程单\",\n  \"vendor\": \"滴滴出行企业版\",\n  \"apply_date\": \"2024-01-19\",\n  \"start_date\": \"2023-12-28\",\n  \"end_date\": \"2024-01-16\",\n  \"trips\": [\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2023-12-28\",\n      \"start_time\": \"2023-12-28 23:12:00\",\n      \"line_amount\": 14.86,\n      \"currency\": \"元\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-09\",\n      \"start_time\": \"2024-01-09 20:09:00\",\n      \"line_amount\": 13.02,\n      \"currency\": \"元\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-10\",\n      \"start_time\": \"2024-01-10 20:19:00\",\n      \"line_amount\": 13.92,\n      \"currency\": \"元\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-11\",\n      \"start_time\": \"2024-01-11 19:57:00\",\n      \"line_amount\": 13.92,\n      \"currency\": \"元\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-12\",\n      \"start_time\": \"2024-01-12 20:31:00\",\n      \"line_amount\": 14.44,\n      \"currency\": \"元\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-15\",\n      \"start_time\": \"2024-01-15 20:44:00\",\n      \"line_amount\": 13.92,\n      \"currency\": \"元\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-16\",\n      \"start_time\": \"2024-01-16 17:50:00\",\n      \"line_amount\": 12.81,\n      \"currency\": \"元\"\n    }\n  ],\n  \"total_amount\": 96.89\n}\n```",
+          "output": {
+            "type": "行程单",
+            "vendor": "滴滴出行企业版",
+            "apply_date": "2024-01-19",
+            "start_date": "2023-12-28",
+            "end_date": "2024-01-16",
+            "trips": [
+              {
+                "city": "厦门市",
+                "date": "2023-12-28",
+                "start_time": "2023-12-28 23:12:00",
+                "line_amount": 14.86,
+                "currency": "元"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-01-09",
+                "start_time": "2024-01-09 20:09:00",
+                "line_amount": 13.02,
+                "currency": "元"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-01-10",
+                "start_time": "2024-01-10 20:19:00",
+                "line_amount": 13.92,
+                "currency": "元"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-01-11",
+                "start_time": "2024-01-11 19:57:00",
+                "line_amount": 13.92,
+                "currency": "元"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-01-12",
+                "start_time": "2024-01-12 20:31:00",
+                "line_amount": 14.44,
+                "currency": "元"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-01-15",
+                "start_time": "2024-01-15 20:44:00",
+                "line_amount": 13.92,
+                "currency": "元"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-01-16",
+                "start_time": "2024-01-16 17:50:00",
+                "line_amount": 12.81,
+                "currency": "元"
+              }
+            ],
+            "total_amount": 96.89
+          },
+          "parse_error": null,
+          "elapsed_seconds": 23.47609305381775
+        },
+        {
+          "_file": "pictures/行程单/百度地图打车-yyyymmdd_page_01.jpg",
+          "output_raw": "```json\n{\n  \"type\": \"行程单\",\n  \"vendor\": \"百度地图\",\n  \"apply_date\": \"2025-09-05\",\n  \"start_date\": \"2025-09-04\",\n  \"end_date\": \"2025-09-04\",\n  \"trips\": [\n    {\n      \"city\": \"北京\",\n      \"date\": \"2025-09-04\",\n      \"start_time\": \"2025-09-04 16:00:45\",\n      \"line_amount\": \"29.31\",\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"北京\",\n      \"date\": \"2025-09-04\",\n      \"start_time\": \"2025-09-04 08:09:10\",\n      \"line_amount\": \"24.61\",\n      \"currency\": \"CNY\"\n    }\n  ],\n  \"total_amount\": \"53.92\"\n}\n```",
+          "output": {
+            "type": "行程单",
+            "vendor": "百度地图",
+            "apply_date": "2025-09-05",
+            "start_date": "2025-09-04",
+            "end_date": "2025-09-04",
+            "trips": [
+              {
+                "city": "北京",
+                "date": "2025-09-04",
+                "start_time": "2025-09-04 16:00:45",
+                "line_amount": "29.31",
+                "currency": "CNY"
+              },
+              {
+                "city": "北京",
+                "date": "2025-09-04",
+                "start_time": "2025-09-04 08:09:10",
+                "line_amount": "24.61",
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": "53.92"
+          },
+          "parse_error": null,
+          "elapsed_seconds": 16.781408071517944
+        },
+        {
+          "_file": "pictures/行程单/花小猪打车行程单-2条乘车记录_page_01.jpg",
+          "output_raw": "```json\n{\n  \"type\": \"行程单\",\n  \"vendor\": \"花小猪打车\",\n  \"apply_date\": \"2024-03-04\",\n  \"start_date\": \"2024-01-21\",\n  \"end_date\": \"2024-02-08\",\n  \"trips\": [\n    {\n      \"city\": \"福州市\",\n      \"date\": \"2024-01-21\",\n      \"start_time\": \"2024-01-21 20:13:00\",\n      \"line_amount\": \"31.40\",\n      \"currency\": \"元\"\n    },\n    {\n      \"city\": \"福州市\",\n      \"date\": \"2024-02-08\",\n      \"start_time\": \"2024-02-08 17:32:00\",\n      \"line_amount\": \"89.92\",\n      \"currency\": \"元\"\n    }\n  ],\n  \"total_amount\": \"121.32\"\n}\n```",
+          "output": {
+            "type": "行程单",
+            "vendor": "花小猪打车",
+            "apply_date": "2024-03-04",
+            "start_date": "2024-01-21",
+            "end_date": "2024-02-08",
+            "trips": [
+              {
+                "city": "福州市",
+                "date": "2024-01-21",
+                "start_time": "2024-01-21 20:13:00",
+                "line_amount": "31.40",
+                "currency": "元"
+              },
+              {
+                "city": "福州市",
+                "date": "2024-02-08",
+                "start_time": "2024-02-08 17:32:00",
+                "line_amount": "89.92",
+                "currency": "元"
+              }
+            ],
+            "total_amount": "121.32"
+          },
+          "parse_error": null,
+          "elapsed_seconds": 13.10295295715332
+        }
+      ],
+      "end_time": "2025-11-19T08:31:39.317383Z",
+      "elapsed_seconds": 78.75168299674988
+    },
+    {
+      "model": "qwen2.5-vl-32b-instruct",
+      "start_time": "2025-11-19T08:31:39.317406Z",
+      "cases": [
+        {
+          "_file": "pictures/行程单/携程用车行程单_page_01.jpg",
+          "output_raw": "```json\n{\n  \"type\": \"行程单\",\n  \"vendor\": \"携程\",\n  \"apply_date\": \"2025-08-25\",\n  \"start_date\": \"2025-08-22\",\n  \"end_date\": \"2025-08-22\",\n  \"trips\": [\n    {\n      \"city\": \"北京\",\n      \"date\": \"2025-08-22\",\n      \"start_time\": \"2025-08-22 13:55:00\",\n      \"line_amount\": 103.00,\n      \"currency\": \"CNY\"\n    }\n  ],\n  \"total_amount\": 103.00\n}\n```",
+          "output": {
+            "type": "行程单",
+            "vendor": "携程",
+            "apply_date": "2025-08-25",
+            "start_date": "2025-08-22",
+            "end_date": "2025-08-22",
+            "trips": [
+              {
+                "city": "北京",
+                "date": "2025-08-22",
+                "start_time": "2025-08-22 13:55:00",
+                "line_amount": 103.0,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 103.0
+          },
+          "parse_error": null,
+          "elapsed_seconds": 5.64965295791626
+        },
+        {
+          "_file": "pictures/行程单/曹操出行电子行程单-2条乘车记录_page_01.jpg",
+          "output_raw": "```json\n{\n  \"type\": \"行程单\",\n  \"vendor\": \"曹操出行\",\n  \"apply_date\": \"2023-01-18\",\n  \"start_date\": \"2023-01-13\",\n  \"end_date\": \"2023-01-13\",\n  \"trips\": [\n    {\n      \"city\": \"福州\",\n      \"date\": \"2023-01-13\",\n      \"start_time\": \"2023-01-13 14:10:00\",\n      \"line_amount\": 39.72,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"福州\",\n      \"date\": \"2023-01-13\",\n      \"start_time\": \"2023-01-13 12:58:00\",\n      \"line_amount\": 43.43,\n      \"currency\": \"CNY\"\n    }\n  ],\n  \"total_amount\": 83.15\n}\n```",
+          "output": {
+            "type": "行程单",
+            "vendor": "曹操出行",
+            "apply_date": "2023-01-18",
+            "start_date": "2023-01-13",
+            "end_date": "2023-01-13",
+            "trips": [
+              {
+                "city": "福州",
+                "date": "2023-01-13",
+                "start_time": "2023-01-13 14:10:00",
+                "line_amount": 39.72,
+                "currency": "CNY"
+              },
+              {
+                "city": "福州",
+                "date": "2023-01-13",
+                "start_time": "2023-01-13 12:58:00",
+                "line_amount": 43.43,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 83.15
+          },
+          "parse_error": null,
+          "elapsed_seconds": 7.139105796813965
+        },
+        {
+          "_file": "pictures/行程单/滴滴出行行程报销单-7条乘车记录_page_01.jpg",
+          "output_raw": "```json\n{\n  \"type\": \"行程单\",\n  \"vendor\": \"滴滴出行\",\n  \"apply_date\": \"2024-01-19\",\n  \"start_date\": \"2023-12-28\",\n  \"end_date\": \"2024-01-16\",\n  \"trips\": [\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2023-12-28\",\n      \"start_time\": \"2023-12-28 23:12:00\",\n      \"line_amount\": 14.86,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-09\",\n      \"start_time\": \"2024-01-09 20:09:00\",\n      \"line_amount\": 13.02,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-10\",\n      \"start_time\": \"2024-01-10 20:19:00\",\n      \"line_amount\": 13.92,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-11\",\n      \"start_time\": \"2024-01-11 19:57:00\",\n      \"line_amount\": 13.92,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-12\",\n      \"start_time\": \"2024-01-12 20:31:00\",\n      \"line_amount\": 14.44,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-15\",\n      \"start_time\": \"2024-01-15 20:44:00\",\n      \"line_amount\": 13.92,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-16\",\n      \"start_time\": \"2024-01-16 17:50:00\",\n      \"line_amount\": 12.81,\n      \"currency\": \"CNY\"\n    }\n  ],\n  \"total_amount\": 96.89\n}\n```",
+          "output": {
+            "type": "行程单",
+            "vendor": "滴滴出行",
+            "apply_date": "2024-01-19",
+            "start_date": "2023-12-28",
+            "end_date": "2024-01-16",
+            "trips": [
+              {
+                "city": "厦门市",
+                "date": "2023-12-28",
+                "start_time": "2023-12-28 23:12:00",
+                "line_amount": 14.86,
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-01-09",
+                "start_time": "2024-01-09 20:09:00",
+                "line_amount": 13.02,
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-01-10",
+                "start_time": "2024-01-10 20:19:00",
+                "line_amount": 13.92,
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-01-11",
+                "start_time": "2024-01-11 19:57:00",
+                "line_amount": 13.92,
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-01-12",
+                "start_time": "2024-01-12 20:31:00",
+                "line_amount": 14.44,
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-01-15",
+                "start_time": "2024-01-15 20:44:00",
+                "line_amount": 13.92,
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-01-16",
+                "start_time": "2024-01-16 17:50:00",
+                "line_amount": 12.81,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 96.89
+          },
+          "parse_error": null,
+          "elapsed_seconds": 16.053252935409546
+        },
+        {
+          "_file": "pictures/行程单/百度地图打车-yyyymmdd_page_01.jpg",
+          "output_raw": "```json\n{\n  \"type\": \"行程单\",\n  \"vendor\": \"百度地图\",\n  \"apply_date\": \"2025-09-05\",\n  \"start_date\": \"2025-09-04\",\n  \"end_date\": \"2025-09-04\",\n  \"trips\": [\n    {\n      \"city\": \"北京\",\n      \"date\": \"2025-09-04\",\n      \"start_time\": \"2025-09-04 16:00:45\",\n      \"line_amount\": 29.31,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"北京\",\n      \"date\": \"2025-09-04\",\n      \"start_time\": \"2025-09-04 08:09:10\",\n      \"line_amount\": 24.61,\n      \"currency\": \"CNY\"\n    }\n  ],\n  \"total_amount\": 53.92\n}\n```",
+          "output": {
+            "type": "行程单",
+            "vendor": "百度地图",
+            "apply_date": "2025-09-05",
+            "start_date": "2025-09-04",
+            "end_date": "2025-09-04",
+            "trips": [
+              {
+                "city": "北京",
+                "date": "2025-09-04",
+                "start_time": "2025-09-04 16:00:45",
+                "line_amount": 29.31,
+                "currency": "CNY"
+              },
+              {
+                "city": "北京",
+                "date": "2025-09-04",
+                "start_time": "2025-09-04 08:09:10",
+                "line_amount": 24.61,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 53.92
+          },
+          "parse_error": null,
+          "elapsed_seconds": 7.257529020309448
+        },
+        {
+          "_file": "pictures/行程单/花小猪打车行程单-2条乘车记录_page_01.jpg",
+          "output_raw": "```json\n{\n  \"type\": \"行程单\",\n  \"vendor\": \"花小猪打车\",\n  \"apply_date\": \"2024-03-04\",\n  \"start_date\": \"2024-01-21\",\n  \"end_date\": \"2024-02-08\",\n  \"trips\": [\n    {\n      \"city\": \"福州市\",\n      \"date\": \"2024-01-21\",\n      \"start_time\": \"2024-01-21 20:13:00\",\n      \"line_amount\": 31.49,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"杭州市\",\n      \"date\": \"2024-02-08\",\n      \"start_time\": \"2024-02-08 17:52:00\",\n      \"line_amount\": 89.92,\n      \"currency\": \"CNY\"\n    }\n  ],\n  \"total_amount\": 121.32\n}\n```",
+          "output": {
+            "type": "行程单",
+            "vendor": "花小猪打车",
+            "apply_date": "2024-03-04",
+            "start_date": "2024-01-21",
+            "end_date": "2024-02-08",
+            "trips": [
+              {
+                "city": "福州市",
+                "date": "2024-01-21",
+                "start_time": "2024-01-21 20:13:00",
+                "line_amount": 31.49,
+                "currency": "CNY"
+              },
+              {
+                "city": "杭州市",
+                "date": "2024-02-08",
+                "start_time": "2024-02-08 17:52:00",
+                "line_amount": 89.92,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 121.32
+          },
+          "parse_error": null,
+          "elapsed_seconds": 7.250063896179199
+        }
+      ],
+      "end_time": "2025-11-19T08:32:22.667513Z",
+      "elapsed_seconds": 43.350119829177856
+    },
+    {
+      "model": "qwen2.5-vl-72b-instruct",
+      "start_time": "2025-11-19T08:32:22.667538Z",
+      "cases": [
+        {
+          "_file": "pictures/行程单/携程用车行程单_page_01.jpg",
+          "output_raw": "```json\n{\n  \"type\": \"行程单\",\n  \"vendor\": \"携程\",\n  \"apply_date\": \"2025-08-25\",\n  \"start_date\": \"2025-08-22\",\n  \"end_date\": \"2025-08-22\",\n  \"trips\": [\n    {\n      \"city\": \"北京\",\n      \"date\": \"2025-08-22\",\n      \"start_time\": \"2025-08-22 13:55:00\",\n      \"line_amount\": 103.00,\n      \"currency\": \"CNY\"\n    }\n  ],\n  \"total_amount\": 103.00\n}\n```",
+          "output": {
+            "type": "行程单",
+            "vendor": "携程",
+            "apply_date": "2025-08-25",
+            "start_date": "2025-08-22",
+            "end_date": "2025-08-22",
+            "trips": [
+              {
+                "city": "北京",
+                "date": "2025-08-22",
+                "start_time": "2025-08-22 13:55:00",
+                "line_amount": 103.0,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 103.0
+          },
+          "parse_error": null,
+          "elapsed_seconds": 7.196666955947876
+        },
+        {
+          "_file": "pictures/行程单/曹操出行电子行程单-2条乘车记录_page_01.jpg",
+          "output_raw": "```json\n{\n  \"type\": \"行程单\",\n  \"vendor\": \"曹操出行\",\n  \"apply_date\": \"2023-01-18\",\n  \"start_date\": \"2023-01-13\",\n  \"end_date\": \"2023-01-13\",\n  \"trips\": [\n    {\n      \"city\": \"福州\",\n      \"date\": \"2023-01-13\",\n      \"start_time\": \"2023-01-13 14:10:00\",\n      \"line_amount\": 39.72,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"福州\",\n      \"date\": \"2023-01-13\",\n      \"start_time\": \"2023-01-13 12:58:00\",\n      \"line_amount\": 43.43,\n      \"currency\": \"CNY\"\n    }\n  ],\n  \"total_amount\": 83.15\n}\n```",
+          "output": {
+            "type": "行程单",
+            "vendor": "曹操出行",
+            "apply_date": "2023-01-18",
+            "start_date": "2023-01-13",
+            "end_date": "2023-01-13",
+            "trips": [
+              {
+                "city": "福州",
+                "date": "2023-01-13",
+                "start_time": "2023-01-13 14:10:00",
+                "line_amount": 39.72,
+                "currency": "CNY"
+              },
+              {
+                "city": "福州",
+                "date": "2023-01-13",
+                "start_time": "2023-01-13 12:58:00",
+                "line_amount": 43.43,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 83.15
+          },
+          "parse_error": null,
+          "elapsed_seconds": 12.246872901916504
+        },
+        {
+          "_file": "pictures/行程单/滴滴出行行程报销单-7条乘车记录_page_01.jpg",
+          "output_raw": "```json\n{\n  \"type\": \"行程单\",\n  \"vendor\": \"滴滴出行\",\n  \"apply_date\": \"2024-01-19\",\n  \"start_date\": \"2023-12-28\",\n  \"end_date\": \"2024-01-16\",\n  \"trips\": [\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2023-12-28\",\n      \"start_time\": \"2023-12-28 23:12:00\",\n      \"line_amount\": 14.86,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-09\",\n      \"start_time\": \"2024-01-09 20:09:00\",\n      \"line_amount\": 13.02,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-10\",\n      \"start_time\": \"2024-01-10 20:19:00\",\n      \"line_amount\": 13.92,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-11\",\n      \"start_time\": \"2024-01-11 19:57:00\",\n      \"line_amount\": 13.92,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-12\",\n      \"start_time\": \"2024-01-12 20:31:00\",\n      \"line_amount\": 14.44,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-15\",\n      \"start_time\": \"2024-01-15 20:44:00\",\n      \"line_amount\": 13.92,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-16\",\n      \"start_time\": \"2024-01-16 17:50:00\",\n      \"line_amount\": 12.81,\n      \"currency\": \"CNY\"\n    }\n  ],\n  \"total_amount\": 96.89\n}\n```",
+          "output": {
+            "type": "行程单",
+            "vendor": "滴滴出行",
+            "apply_date": "2024-01-19",
+            "start_date": "2023-12-28",
+            "end_date": "2024-01-16",
+            "trips": [
+              {
+                "city": "厦门市",
+                "date": "2023-12-28",
+                "start_time": "2023-12-28 23:12:00",
+                "line_amount": 14.86,
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-01-09",
+                "start_time": "2024-01-09 20:09:00",
+                "line_amount": 13.02,
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-01-10",
+                "start_time": "2024-01-10 20:19:00",
+                "line_amount": 13.92,
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-01-11",
+                "start_time": "2024-01-11 19:57:00",
+                "line_amount": 13.92,
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-01-12",
+                "start_time": "2024-01-12 20:31:00",
+                "line_amount": 14.44,
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-01-15",
+                "start_time": "2024-01-15 20:44:00",
+                "line_amount": 13.92,
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-01-16",
+                "start_time": "2024-01-16 17:50:00",
+                "line_amount": 12.81,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 96.89
+          },
+          "parse_error": null,
+          "elapsed_seconds": 22.106591939926147
+        },
+        {
+          "_file": "pictures/行程单/百度地图打车-yyyymmdd_page_01.jpg",
+          "output_raw": "```json\n{\n  \"type\": \"行程单\",\n  \"vendor\": \"百度地图\",\n  \"apply_date\": \"2025-09-05\",\n  \"start_date\": \"2025-09-04\",\n  \"end_date\": \"2025-09-04\",\n  \"trips\": [\n    {\n      \"city\": \"北京\",\n      \"date\": \"2025-09-04\",\n      \"start_time\": \"2025-09-04 16:00:45\",\n      \"line_amount\": 29.31,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"北京\",\n      \"date\": \"2025-09-04\",\n      \"start_time\": \"2025-09-04 08:09:10\",\n      \"line_amount\": 24.61,\n      \"currency\": \"CNY\"\n    }\n  ],\n  \"total_amount\": 53.92\n}\n```",
+          "output": {
+            "type": "行程单",
+            "vendor": "百度地图",
+            "apply_date": "2025-09-05",
+            "start_date": "2025-09-04",
+            "end_date": "2025-09-04",
+            "trips": [
+              {
+                "city": "北京",
+                "date": "2025-09-04",
+                "start_time": "2025-09-04 16:00:45",
+                "line_amount": 29.31,
+                "currency": "CNY"
+              },
+              {
+                "city": "北京",
+                "date": "2025-09-04",
+                "start_time": "2025-09-04 08:09:10",
+                "line_amount": 24.61,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 53.92
+          },
+          "parse_error": null,
+          "elapsed_seconds": 12.618340969085693
+        },
+        {
+          "_file": "pictures/行程单/花小猪打车行程单-2条乘车记录_page_01.jpg",
+          "output_raw": "```json\n{\n  \"type\": \"行程单\",\n  \"vendor\": \"花小猪打车\",\n  \"apply_date\": \"2024-03-04\",\n  \"start_date\": \"2024-01-21\",\n  \"end_date\": \"2024-02-08\",\n  \"trips\": [\n    {\n      \"city\": \"福州\",\n      \"date\": \"2024-01-21\",\n      \"start_time\": \"2024-01-21 20:15:00\",\n      \"line_amount\": 31.40,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"福州\",\n      \"date\": \"2024-02-08\",\n      \"start_time\": \"2024-02-08 17:52:00\",\n      \"line_amount\": 89.92,\n      \"currency\": \"CNY\"\n    }\n  ],\n  \"total_amount\": 121.32\n}\n```",
+          "output": {
+            "type": "行程单",
+            "vendor": "花小猪打车",
+            "apply_date": "2024-03-04",
+            "start_date": "2024-01-21",
+            "end_date": "2024-02-08",
+            "trips": [
+              {
+                "city": "福州",
+                "date": "2024-01-21",
+                "start_time": "2024-01-21 20:15:00",
+                "line_amount": 31.4,
+                "currency": "CNY"
+              },
+              {
+                "city": "福州",
+                "date": "2024-02-08",
+                "start_time": "2024-02-08 17:52:00",
+                "line_amount": 89.92,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 121.32
+          },
+          "parse_error": null,
+          "elapsed_seconds": 9.196537971496582
+        }
+      ],
+      "end_time": "2025-11-19T08:33:26.032953Z",
+      "elapsed_seconds": 63.36543679237366
+    },
+    {
+      "model": "qwen3-vl-8b-instruct",
+      "start_time": "2025-11-19T08:33:26.032987Z",
+      "cases": [
+        {
+          "_file": "pictures/行程单/携程用车行程单_page_01.jpg",
+          "output_raw": "{\n  \"type\": \"行程单\",\n  \"vendor\": \"携程\",\n  \"apply_date\": \"2025-08-25\",\n  \"start_date\": \"2025-08-22\",\n  \"end_date\": \"2025-08-22\",\n  \"trips\": [\n    {\n      \"city\": \"北京\",\n      \"date\": \"2025-08-22\",\n      \"start_time\": \"2025-08-22 13:55:00\",\n      \"line_amount\": 103.00,\n      \"currency\": \"CNY\"\n    }\n  ],\n  \"total_amount\": 103.00\n}",
+          "output": {
+            "type": "行程单",
+            "vendor": "携程",
+            "apply_date": "2025-08-25",
+            "start_date": "2025-08-22",
+            "end_date": "2025-08-22",
+            "trips": [
+              {
+                "city": "北京",
+                "date": "2025-08-22",
+                "start_time": "2025-08-22 13:55:00",
+                "line_amount": 103.0,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 103.0
+          },
+          "parse_error": null,
+          "elapsed_seconds": 6.9890031814575195
+        },
+        {
+          "_file": "pictures/行程单/曹操出行电子行程单-2条乘车记录_page_01.jpg",
+          "output_raw": "{\n  \"type\": \"行程单\",\n  \"vendor\": \"曹操出行\",\n  \"apply_date\": \"2023-01-18\",\n  \"start_date\": \"2023-01-13\",\n  \"end_date\": \"2023-01-13\",\n  \"trips\": [\n    {\n      \"city\": \"福州\",\n      \"date\": \"2023-01-13\",\n      \"start_time\": \"2023-01-13 14:10:00\",\n      \"line_amount\": 39.72,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"福州\",\n      \"date\": \"2023-01-13\",\n      \"start_time\": \"2023-01-13 12:58:00\",\n      \"line_amount\": 43.43,\n      \"currency\": \"CNY\"\n    }\n  ],\n  \"total_amount\": 83.15\n}",
+          "output": {
+            "type": "行程单",
+            "vendor": "曹操出行",
+            "apply_date": "2023-01-18",
+            "start_date": "2023-01-13",
+            "end_date": "2023-01-13",
+            "trips": [
+              {
+                "city": "福州",
+                "date": "2023-01-13",
+                "start_time": "2023-01-13 14:10:00",
+                "line_amount": 39.72,
+                "currency": "CNY"
+              },
+              {
+                "city": "福州",
+                "date": "2023-01-13",
+                "start_time": "2023-01-13 12:58:00",
+                "line_amount": 43.43,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 83.15
+          },
+          "parse_error": null,
+          "elapsed_seconds": 6.591700077056885
+        },
+        {
+          "_file": "pictures/行程单/滴滴出行行程报销单-7条乘车记录_page_01.jpg",
+          "output_raw": "{\n  \"type\": \"行程单\",\n  \"vendor\": \"滴滴出行\",\n  \"apply_date\": \"2024-01-19\",\n  \"start_date\": \"2023-12-28\",\n  \"end_date\": \"2024-01-16\",\n  \"trips\": [\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2023-12-28\",\n      \"start_time\": \"2023-12-28 23:12:00\",\n      \"line_amount\": 14.86,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-09\",\n      \"start_time\": \"2024-01-09 20:09:00\",\n      \"line_amount\": 13.02,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-10\",\n      \"start_time\": \"2024-01-10 20:19:00\",\n      \"line_amount\": 13.92,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-11\",\n      \"start_time\": \"2024-01-11 19:57:00\",\n      \"line_amount\": 13.92,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-12\",\n      \"start_time\": \"2024-01-12 20:31:00\",\n      \"line_amount\": 14.44,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-15\",\n      \"start_time\": \"2024-01-15 20:44:00\",\n      \"line_amount\": 13.92,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-16\",\n      \"start_time\": \"2024-01-16 17:50:00\",\n      \"line_amount\": 12.81,\n      \"currency\": \"CNY\"\n    }\n  ],\n  \"total_amount\": 96.89\n}",
+          "output": {
+            "type": "行程单",
+            "vendor": "滴滴出行",
+            "apply_date": "2024-01-19",
+            "start_date": "2023-12-28",
+            "end_date": "2024-01-16",
+            "trips": [
+              {
+                "city": "厦门市",
+                "date": "2023-12-28",
+                "start_time": "2023-12-28 23:12:00",
+                "line_amount": 14.86,
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-01-09",
+                "start_time": "2024-01-09 20:09:00",
+                "line_amount": 13.02,
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-01-10",
+                "start_time": "2024-01-10 20:19:00",
+                "line_amount": 13.92,
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-01-11",
+                "start_time": "2024-01-11 19:57:00",
+                "line_amount": 13.92,
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-01-12",
+                "start_time": "2024-01-12 20:31:00",
+                "line_amount": 14.44,
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-01-15",
+                "start_time": "2024-01-15 20:44:00",
+                "line_amount": 13.92,
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-01-16",
+                "start_time": "2024-01-16 17:50:00",
+                "line_amount": 12.81,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 96.89
+          },
+          "parse_error": null,
+          "elapsed_seconds": 15.297229051589966
+        },
+        {
+          "_file": "pictures/行程单/百度地图打车-yyyymmdd_page_01.jpg",
+          "output_raw": "{\n  \"type\": \"行程单\",\n  \"vendor\": \"百度地图\",\n  \"apply_date\": \"2025-09-05\",\n  \"start_date\": \"2025-09-04\",\n  \"end_date\": \"2025-09-04\",\n  \"trips\": [\n    {\n      \"city\": \"北京\",\n      \"date\": \"2025-09-04\",\n      \"start_time\": \"2025-09-04 16:00:45\",\n      \"line_amount\": 29.31,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"北京\",\n      \"date\": \"2025-09-04\",\n      \"start_time\": \"2025-09-04 08:09:10\",\n      \"line_amount\": 24.61,\n      \"currency\": \"CNY\"\n    }\n  ],\n  \"total_amount\": 53.92\n}",
+          "output": {
+            "type": "行程单",
+            "vendor": "百度地图",
+            "apply_date": "2025-09-05",
+            "start_date": "2025-09-04",
+            "end_date": "2025-09-04",
+            "trips": [
+              {
+                "city": "北京",
+                "date": "2025-09-04",
+                "start_time": "2025-09-04 16:00:45",
+                "line_amount": 29.31,
+                "currency": "CNY"
+              },
+              {
+                "city": "北京",
+                "date": "2025-09-04",
+                "start_time": "2025-09-04 08:09:10",
+                "line_amount": 24.61,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 53.92
+          },
+          "parse_error": null,
+          "elapsed_seconds": 6.855860948562622
+        },
+        {
+          "_file": "pictures/行程单/花小猪打车行程单-2条乘车记录_page_01.jpg",
+          "output_raw": "{\n  \"type\": \"行程单\",\n  \"vendor\": \"花小猪打车\",\n  \"apply_date\": \"2024-03-04\",\n  \"start_date\": \"2024-01-21\",\n  \"end_date\": \"2024-02-08\",\n  \"trips\": [\n    {\n      \"city\": \"福州市\",\n      \"date\": \"2024-01-21\",\n      \"start_time\": \"2024-01-21 20:13:00\",\n      \"line_amount\": 31.40,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"福州市\",\n      \"date\": \"2024-02-08\",\n      \"start_time\": \"2024-02-08 17:32:00\",\n      \"line_amount\": 89.92,\n      \"currency\": \"CNY\"\n    }\n  ],\n  \"total_amount\": 121.32\n}",
+          "output": {
+            "type": "行程单",
+            "vendor": "花小猪打车",
+            "apply_date": "2024-03-04",
+            "start_date": "2024-01-21",
+            "end_date": "2024-02-08",
+            "trips": [
+              {
+                "city": "福州市",
+                "date": "2024-01-21",
+                "start_time": "2024-01-21 20:13:00",
+                "line_amount": 31.4,
+                "currency": "CNY"
+              },
+              {
+                "city": "福州市",
+                "date": "2024-02-08",
+                "start_time": "2024-02-08 17:32:00",
+                "line_amount": 89.92,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 121.32
+          },
+          "parse_error": null,
+          "elapsed_seconds": 6.936724901199341
+        }
+      ],
+      "end_time": "2025-11-19T08:34:08.704020Z",
+      "elapsed_seconds": 42.67104506492615
+    },
+    {
+      "model": "qwen3-vl-30b-a3b-instruct",
+      "start_time": "2025-11-19T08:34:08.704259Z",
+      "cases": [
+        {
+          "_file": "pictures/行程单/携程用车行程单_page_01.jpg",
+          "output_raw": "{\n  \"type\": \"行程单\",\n  \"vendor\": \"携程\",\n  \"apply_date\": \"2025-08-25\",\n  \"start_date\": \"2025-08-22\",\n  \"end_date\": \"2025-08-22\",\n  \"trips\": [\n    {\n      \"city\": \"北京\",\n      \"date\": \"2025-08-22\",\n      \"start_time\": \"2025-08-22 13:55:00\",\n      \"line_amount\": 103.00,\n      \"currency\": \"CNY\"\n    }\n  ],\n  \"total_amount\": 103.00\n}",
+          "output": {
+            "type": "行程单",
+            "vendor": "携程",
+            "apply_date": "2025-08-25",
+            "start_date": "2025-08-22",
+            "end_date": "2025-08-22",
+            "trips": [
+              {
+                "city": "北京",
+                "date": "2025-08-22",
+                "start_time": "2025-08-22 13:55:00",
+                "line_amount": 103.0,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 103.0
+          },
+          "parse_error": null,
+          "elapsed_seconds": 3.017864942550659
+        },
+        {
+          "_file": "pictures/行程单/曹操出行电子行程单-2条乘车记录_page_01.jpg",
+          "output_raw": "{\n  \"type\": \"行程单\",\n  \"vendor\": \"曹操出行\",\n  \"apply_date\": \"2023-01-18\",\n  \"start_date\": \"2023-01-13\",\n  \"end_date\": \"2023-01-13\",\n  \"trips\": [\n    {\n      \"city\": \"福州\",\n      \"date\": \"2023-01-13\",\n      \"start_time\": \"2023-01-13 14:10:00\",\n      \"line_amount\": 39.72,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"福州\",\n      \"date\": \"2023-01-13\",\n      \"start_time\": \"2023-01-13 12:58:00\",\n      \"line_amount\": 43.43,\n      \"currency\": \"CNY\"\n    }\n  ],\n  \"total_amount\": 83.15\n}",
+          "output": {
+            "type": "行程单",
+            "vendor": "曹操出行",
+            "apply_date": "2023-01-18",
+            "start_date": "2023-01-13",
+            "end_date": "2023-01-13",
+            "trips": [
+              {
+                "city": "福州",
+                "date": "2023-01-13",
+                "start_time": "2023-01-13 14:10:00",
+                "line_amount": 39.72,
+                "currency": "CNY"
+              },
+              {
+                "city": "福州",
+                "date": "2023-01-13",
+                "start_time": "2023-01-13 12:58:00",
+                "line_amount": 43.43,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 83.15
+          },
+          "parse_error": null,
+          "elapsed_seconds": 14.340939044952393
+        },
+        {
+          "_file": "pictures/行程单/滴滴出行行程报销单-7条乘车记录_page_01.jpg",
+          "output_raw": "{\n  \"type\": \"行程单\",\n  \"vendor\": \"滴滴出行\",\n  \"apply_date\": \"2024-01-19\",\n  \"start_date\": \"2023-12-28\",\n  \"end_date\": \"2024-01-16\",\n  \"trips\": [\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-16\",\n      \"start_time\": \"2024-01-16 17:50:00\",\n      \"line_amount\": 12.81,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-15\",\n      \"start_time\": \"2024-01-15 20:44:00\",\n      \"line_amount\": 13.92,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-12\",\n      \"start_time\": \"2024-01-12 20:31:00\",\n      \"line_amount\": 14.44,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-11\",\n      \"start_time\": \"2024-01-11 19:57:00\",\n      \"line_amount\": 13.92,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-10\",\n      \"start_time\": \"2024-01-10 20:19:00\",\n      \"line_amount\": 13.92,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-01-09\",\n      \"start_time\": \"2024-01-09 20:09:00\",\n      \"line_amount\": 13.02,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"厦门市\",\n      \"date\": \"2024-12-28\",\n      \"start_time\": \"2024-12-28 23:12:00\",\n      \"line_amount\": 14.86,\n      \"currency\": \"CNY\"\n    }\n  ],\n  \"total_amount\": 96.89\n}",
+          "output": {
+            "type": "行程单",
+            "vendor": "滴滴出行",
+            "apply_date": "2024-01-19",
+            "start_date": "2023-12-28",
+            "end_date": "2024-01-16",
+            "trips": [
+              {
+                "city": "厦门市",
+                "date": "2024-01-16",
+                "start_time": "2024-01-16 17:50:00",
+                "line_amount": 12.81,
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-01-15",
+                "start_time": "2024-01-15 20:44:00",
+                "line_amount": 13.92,
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-01-12",
+                "start_time": "2024-01-12 20:31:00",
+                "line_amount": 14.44,
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-01-11",
+                "start_time": "2024-01-11 19:57:00",
+                "line_amount": 13.92,
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-01-10",
+                "start_time": "2024-01-10 20:19:00",
+                "line_amount": 13.92,
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-01-09",
+                "start_time": "2024-01-09 20:09:00",
+                "line_amount": 13.02,
+                "currency": "CNY"
+              },
+              {
+                "city": "厦门市",
+                "date": "2024-12-28",
+                "start_time": "2024-12-28 23:12:00",
+                "line_amount": 14.86,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 96.89
+          },
+          "parse_error": null,
+          "elapsed_seconds": 7.090955972671509
+        },
+        {
+          "_file": "pictures/行程单/百度地图打车-yyyymmdd_page_01.jpg",
+          "output_raw": "{\n  \"type\": \"行程单\",\n  \"vendor\": \"百度地图\",\n  \"apply_date\": \"2025-09-05\",\n  \"start_date\": \"2025-09-04\",\n  \"end_date\": \"2025-09-04\",\n  \"trips\": [\n    {\n      \"city\": \"北京\",\n      \"date\": \"2025-09-04\",\n      \"start_time\": \"2025-09-04 16:00:45\",\n      \"line_amount\": 29.31,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"北京\",\n      \"date\": \"2025-09-04\",\n      \"start_time\": \"2025-09-04 08:09:10\",\n      \"line_amount\": 24.61,\n      \"currency\": \"CNY\"\n    }\n  ],\n  \"total_amount\": 53.92\n}",
+          "output": {
+            "type": "行程单",
+            "vendor": "百度地图",
+            "apply_date": "2025-09-05",
+            "start_date": "2025-09-04",
+            "end_date": "2025-09-04",
+            "trips": [
+              {
+                "city": "北京",
+                "date": "2025-09-04",
+                "start_time": "2025-09-04 16:00:45",
+                "line_amount": 29.31,
+                "currency": "CNY"
+              },
+              {
+                "city": "北京",
+                "date": "2025-09-04",
+                "start_time": "2025-09-04 08:09:10",
+                "line_amount": 24.61,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 53.92
+          },
+          "parse_error": null,
+          "elapsed_seconds": 4.0194010734558105
+        },
+        {
+          "_file": "pictures/行程单/花小猪打车行程单-2条乘车记录_page_01.jpg",
+          "output_raw": "{\n  \"type\": \"行程单\",\n  \"vendor\": \"花小猪打车\",\n  \"apply_date\": \"2024-03-04\",\n  \"start_date\": \"2024-01-21\",\n  \"end_date\": \"2024-02-08\",\n  \"trips\": [\n    {\n      \"city\": \"福州市\",\n      \"date\": \"2024-01-21\",\n      \"start_time\": \"2024-01-21 20:13:00\",\n      \"line_amount\": 31.40,\n      \"currency\": \"CNY\"\n    },\n    {\n      \"city\": \"福州市\",\n      \"date\": \"2024-02-08\",\n      \"start_time\": \"2024-02-08 17:32:00\",\n      \"line_amount\": 89.92,\n      \"currency\": \"CNY\"\n    }\n  ],\n  \"total_amount\": 121.32\n}",
+          "output": {
+            "type": "行程单",
+            "vendor": "花小猪打车",
+            "apply_date": "2024-03-04",
+            "start_date": "2024-01-21",
+            "end_date": "2024-02-08",
+            "trips": [
+              {
+                "city": "福州市",
+                "date": "2024-01-21",
+                "start_time": "2024-01-21 20:13:00",
+                "line_amount": 31.4,
+                "currency": "CNY"
+              },
+              {
+                "city": "福州市",
+                "date": "2024-02-08",
+                "start_time": "2024-02-08 17:32:00",
+                "line_amount": 89.92,
+                "currency": "CNY"
+              }
+            ],
+            "total_amount": 121.32
+          },
+          "parse_error": null,
+          "elapsed_seconds": 3.5094501972198486
+        }
+      ],
+      "end_time": "2025-11-19T08:34:40.683356Z",
+      "elapsed_seconds": 31.979100942611694
+    }
+  ],
+  "task_end": "2025-11-19T08:34:40.683369Z",
+  "task_elapsed_seconds": 370.2492458820343
+}
