@@ -59,8 +59,8 @@ async def run_one_file(image_path: Path, prompt_path: Path) -> dict:
 
                 raw = resp.json()["choices"][0]["message"]["content"]
 
+                # flatten list output
                 if isinstance(raw, list):
-                    # flatten list content
                     text = ""
                     for c in raw:
                         if isinstance(c, dict) and "text" in c:
