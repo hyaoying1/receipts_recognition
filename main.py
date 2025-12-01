@@ -20,9 +20,8 @@ PROMPT_MAP = {
     "itinerary": PROMPT_DIR / "itinerary_prompt.txt",
     "hotel_invoice": PROMPT_DIR / "hotel_prompt.txt",
     "payment": PROMPT_DIR / "payment_prompt.txt",
+    "other": PROMPT_DIR / "other_prompt.txt",
 }
-
-
 
 async def batch_ocr_and_classify(paths):
     # ---- Batch OCR ----

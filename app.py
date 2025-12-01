@@ -12,6 +12,7 @@ PROMPT_MAP = {
     "itinerary": "prompts/itinerary_prompt.txt",
     "hotel_invoice": "prompts/hotel_prompt.txt",
     "payment": "prompts/payment_prompt.txt",
+    "other": "prompts/other_prompt.txt"
 }
 
 
