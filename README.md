@@ -148,3 +148,32 @@ curl -X POST "http://172.20.201.93:8000/predict" \
 }
 
 ```
+## ❗ 错误码说明
+以下为票据识别 API 的通用错误码说明。  
+
+| 错误码 | 描述（中文）           | 描述（English）              |
+|--------|--------------------------|-------------------------------|
+| 4001   | 不支持的文件类型        | Unsupported file type         |
+| 4002   | 文件为空或缺失          | Empty or missing file         |
+| 4003   | 文件处理失败（OCR/模型） | File processing failed        |
+| 5000   | 内部服务器错误          | Internal server error         |
+
+所有错误返回均遵循统一格式：
+
+```
+{
+  "code": 4001,
+  "message": "Unsupported file type",
+  "detail": "example.pdf"
+}
+```
+示例：不支持的文件类型：
+```
+{
+  "code": 4001,
+  "message": "Unsupported file type",
+  "detail": "test.txt"
+}
+
+```
+
