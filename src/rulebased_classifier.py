@@ -90,7 +90,6 @@ async def rule_classify(text: str) -> str:
     return "other"
 
 
-
 async def classification_one(image_path: Path) -> dict:
     text = await run_ocr_async(image_path)
     doc_type = await rule_classify(text)
