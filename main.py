@@ -21,6 +21,7 @@ PROMPT_MAP = {
     "itinerary": PROMPT_DIR / "itinerary_prompt.txt",
     "hotel_invoice": PROMPT_DIR / "hotel_prompt.txt",
     "payment": PROMPT_DIR / "payment_prompt.txt",
+    "other": PROMPT_DIR / "other_prompt.txt",
 }
 
 
@@ -129,8 +130,11 @@ async def main():
     # processed_docs: List[List[Path]]
 
     # ---- Batch OCR + classification (doc-level) ----
+    t0 = time.time()
     print("\n🔍 Running batch OCR + classification ...")
     batch_results = await batch_ocr_and_classify(processed_docs)
+    t1 = time.time()
+    print(f"🕒 Classification took: {t1 - t0:.2f} seconds")
     # batch_results 里每个 item:
     # {
     #   "doc_id": ...,
@@ -150,9 +154,12 @@ async def main():
         # 建议把 extract_one 改成按“文档级”来抽取：
         # async def extract_one(pages: List[Path], doc_type: str): ...
         extract_tasks.append(extract_one(pages, doc_type))
-
+    
+    t2 = time.time()
     # Run all extraction in parallel
     extracted = await asyncio.gather(*extract_tasks)
+    t3 = time.time()
+    print(f"🕒 Extraction (LLM) took: {t3 - t2:.2f} seconds")
     return [e for e in extracted if e is not None]
 
 

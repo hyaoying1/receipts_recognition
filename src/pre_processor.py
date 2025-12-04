@@ -32,7 +32,8 @@ def preprocess_file(input_path: Path, output_dir: Path) -> List[Path]:
         if n_pages == 1:
             # 单页 PDF：只导出第一页，文件名不加 _page1
             page = doc[0]
-            pix = page.get_pixmap(matrix=fitz.Matrix(2, 2))
+            #pix = page.get_pixmap(matrix=fitz.Matrix(1, 1))
+            pix = page.get_pixmap()
             out_path = output_dir / f"{input_path.stem}.jpg"
             pix.save(out_path)
             out_paths.append(out_path)
@@ -40,7 +41,8 @@ def preprocess_file(input_path: Path, output_dir: Path) -> List[Path]:
             # 多页 PDF：每一页导出为 {stem}_page{idx+1}.jpg
             for page_idx in range(n_pages):
                 page = doc[page_idx]
-                pix = page.get_pixmap(matrix=fitz.Matrix(2, 2))
+                #pix = page.get_pixmap(matrix=fitz.Matrix(1, 1))
+                pix = page.get_pixmap()
                 out_path = output_dir / f"{input_path.stem}_page{page_idx + 1}.jpg"
                 pix.save(out_path)
                 out_paths.append(out_path)

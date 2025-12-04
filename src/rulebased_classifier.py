@@ -84,7 +84,7 @@ async def rule_classify(text: str) -> str:
     best_type = max(scores, key=scores.get)
     best_score = scores[best_type]
 
-    if best_score >= 1:
+    if best_score >= 2:
         return best_type
 
     return "other"
