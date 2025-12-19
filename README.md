@@ -1,179 +1,138 @@
-# 📘 票据识别 API 文档（Document Recognition API）
-
-本接口用于上传票据图片并提取结构化字段。  
-支持一次上传 **单张文件** 或 **多张文件**。  
-所有请求均使用同一接口 `/predict`。
-
-
-## 功能描述（Feature Description）
-
-- 支持 JPG / PNG / JPEG / PDF（PDF 自动转换为 JPG）。
-- 自动 OCR 文本识别。
-- 自动判断文件类型：行程单 / 酒店水单 / 支付记录。
-- 自动抽取结构化 JSON 字段。
-- 支持批量识别（单次多个文件）。
-- 返回总耗时 + 每个文件的识别结果。
-
-
-## 接口概览
-
-- **接口地址**：`POST http://172.20.201.93:8000/predict`
-- **请求方式**：`multipart/form-data`
-- **参数名**：`files`
-- **支持多个文件**：是（1 个或多个文件均可）
-- **支持格式**：JPG / PNG / JPEG / PDF
-
-
-
-## 🧾  请求参数说明
-
-| 参数名 | 类型  | 说明 |
-|--------|--------|----------|
-| files | File[]| 需要识别的图片文件，可上传 1 个或多个 |
-
-> ⚠ 参数必须命名为 **files**（复数）。
-
-
-
-## 输入限制
-| 限制项 | 说明 |
-|--------|------|
-| 支持格式 | `.jpg`, `.jpeg`, `.png`, `.pdf` |
-| PDF | 仅处理第一页，自动转成 JPG |
-| 不支持格式 | HEIC、TIFF、ZIP、TXT、DOCX 等 |
-
-
-## 请求示例（curl）
-
-### 单文件上传
+# Receipt Recognition Tool（票据识别工具） 
+## 一、工具简介 
+本工具是一个 **本地运行的票据 / 单据识别程序**，用于对图片或 PDF 文件进行自动化处理，包括： 
+- OCR 文字识别
+- 单据类型自动分类（行程单 / 酒店发票 / 支付凭证等）
+- 按单据类型调用对应解析策略进行字段抽取
+- 输出结构化 JSON 结果 
+- 通过 .env 文件进行配置 
+## 二、运行环境要求 
+- 操作系统：**Linux（x86_64）**
+- 无需安装 Python
+- 需要网络访问权限（用于字段抽取 API）
+## 三、目录结构（推荐） 将可执行文件放在一个独立目录中，例如：
+```text
+receipt_recognizer/
+├── receipt_recognizer        # 可执行文件
+├── .env                      # 配置文件（必须）
+├── input/                    # 输入目录（用户放图片 / PDF）
+├── processed/                # 中间处理目录（自动生成）
+└── output/                   # 输出目录（结果 JSON）
 ```
-curl -X POST "http://172.20.201.93:8000/predict" \
-  -F "files=@hotel1.jpg
+如果未在 .env 中显式指定路径，程序将默认使用以上目录结构。
+
+## 四、配置说明（.env）
+在可执行文件同目录 下创建 .env 文件。
+
+示例 .env
+```env
+API_KEY=your_api_key_here
+INPUT_DIR=./input
+PROCESSED_DIR=./processed
+OUTPUT_DIR=./output
+```
+配置项说明
+|配置项	|说明|
+|---|---|
+|API_KEY|	用于调用字段抽取服务|
+|INPUT_DIR	|	输入文件目录|
+|PROCESSED_DIR	|	中间处理目录|
+|OUTPUT_DIR	|输出结果目录|
+
+📌 所有路径均支持 相对路径或绝对路径。
+
+## 五、使用步骤
+1️⃣ 准备输入文件
+将需要识别的图片或 PDF 文件放入输入目录，例如：
+
+```text
+input/
+├── receipt_1.jpg
+├── receipt_2.png
+└── invoice.pdf
+```
+2️⃣ 运行程序
+在当前目录执行：
+
+```bash
+./receipt_recognizer
 ```
 
-###  多文件上传
-```
-curl -X POST "http://172.20.201.93:8000/predict" \
-  -F "files=@hotel1.jpg" \
-  -F "files=@payment2.jpg" \
-  -F "files=@itinerary3.png"
-```
+3️⃣ 查看输出结果
+程序运行完成后，会在输出目录生成一个 JSON 文件，例如：
 
-
-## 返回数据结构
-返回 JSON 结构如下：
+```text
+output/
+└── output_20251218_203556.json
 ```
+## 六、输出结果说明
+输出文件为 JSON 格式，示例如下：
+
+```json
 {
-  "total_time": number,
-  "count": number,
-  "files": [
+  "meta": {
+    "input_dir": "input",
+    "file_count": 3,
+    "total_time_sec": 28.4,
+    "ocr_time_sec": 10.1,
+    "classification_time_sec": 1.9
+  },
+  "results": [
     {
-      "filename": "原始文件名",
+      "file": "receipt_1.jpg",
+      "type": "hotel_invoice",
+      "api_time_seconds": 3.2,
       "result": {
-         ...结构化字段 JSON... 
+        "output": {
+          "...": "..."
+        }
       }
     }
   ]
 }
-
 ```
-字段说明：
+字段说明
+- meta：本次运行的整体统计信息
+- results：每个文件对应的识别与解析结果
+- type：识别出的单据类型
+- result.output：字段抽取后的结构化结果
 
-- total_time: 总处理耗时（秒）
-- count: 文件个数
-- files: 文件识别结果列表
-- result.识别字段: 根据识别类型返回不同结构
+## 七、常见问题（FAQ）
+**Q1：启动时报错 “API_KEY not found”**
+**原因：**
+.env 文件不存在，或未配置 API_KEY。
 
-## 返回示例
+**解决方式：**
+- 确保 .env 与可执行文件在同一目录
+
+- 在 .env 中配置 API_KEY=...
+
+**Q2：提示 “No input files found”**
+**原因：**
+输入目录为空。
+
+**解决方式：**
+
+- 检查 INPUT_DIR 路径是否正确
+
+- 确保目录中存在图片或 PDF 文件
+
+**Q3：出现 onnxruntime 的 GPU 警告**
+```text
+
+GPU device discovery failed
 ```
-{
-    "total_time": 8.09,
-    "count": 3,
-    "files": [
-        {
-            "filename": "支付记录3.jpg",
-            "result": {
-                "文件类型": "支付记录",
-                "交易记录": [
-                    {
-                        "交易日期": "2025-11-14",
-                        "交易金额": 64.4,
-                        "币种": "CNY",
-                        "商家": "滴滴出行"
-                    }
-                ],
-                "总金额": 64.4
-            }
-        },
-        {
-            "filename": "百度地图打车-yyyymmdd.pdf",
-            "result": {
-                "文件类型": "行程单",
-                "供应商": "百度地图",
-                "申请日期": "2025-09-05",
-                "开始日期": "2025-09-04",
-                "结束日期": "2025-09-04",
-                "行程": [
-                    {
-                        "城市": "北京",
-                        "日期": "2025-09-04",
-                        "开始时间": "2025-09-04 16:00:45",
-                        "金额": 29.31,
-                        "币种": "CNY"
-                    },
-                    {
-                        "城市": "北京",
-                        "日期": "2025-09-04",
-                        "开始时间": "2025-09-04 08:09:10",
-                        "金额": 24.61,
-                        "币种": "CNY"
-                    }
-                ],
-                "总金额": 53.92
-            }
-        },
-        {
-            "filename": "酒店水单刷卡单10+苏州希尔顿+0827+663.45.jpg",
-            "result": {
-                "文件类型": "酒店水单",
-                "确认号": "3108321525",
-                "入住日期": "2024-08-27",
-                "离店日期": "2024-08-28",
-                "城市": "Beijing",
-                "总金额": 663.45,
-                "币种": "CNY"
-            }
-        }
-    ]
-}
+说明：
 
-```
-## ❗ 错误码说明
-以下为票据识别 API 的通用错误码说明。  
+- 当前机器无可用 GPU
 
-| 错误码 | 描述（中文）           | 描述（English）              |
-|--------|--------------------------|-------------------------------|
-| 4001   | 不支持的文件类型        | Unsupported file type         |
-| 4002   | 文件为空或缺失          | Empty or missing file         |
-| 4003   | 文件处理失败（OCR/模型） | File processing failed        |
-| 5000   | 内部服务器错误          | Internal server error         |
+- 程序会自动使用 CPU
 
-所有错误返回均遵循统一格式：
+- 不影响使用，可直接忽略
 
-```
-{
-  "code": 4001,
-  "message": "Unsupported file type",
-  "detail": "example.pdf"
-}
-```
-示例：不支持的文件类型：
-```
-{
-  "code": 4001,
-  "message": "Unsupported file type",
-  "detail": "test.txt"
-}
+## 八、注意事项
+本工具为本地批处理工具，不提供 HTTP API 服务
 
-```
+每次运行会生成一个新的输出 JSON 文件
 
+输入文件数量较多时，处理时间会相应增加
